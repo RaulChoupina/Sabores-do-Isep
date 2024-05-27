@@ -1,2 +1,2 @@
-C:/Users/jbcco/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/jbcco/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/CMakeFiles/rebuild_cache.dir
