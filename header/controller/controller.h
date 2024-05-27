@@ -5,12 +5,12 @@
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
 #include "SaboresIsep.h"
-#inlcude "View.h"
-#inlcude "ClientView.h"
-#inlcude "ClientOrderView.h"
-#inlcude "SupplierView.h"
-#inlcude "SupplierOrderView.h"
-#inlcude "ProductView.h"
+#include "View.h"
+#include "ClientView.h"
+#include "ClientOrderView.h"
+#include "SupplierView.h"
+#include "SupplierOrderView.h"
+#include "ProductView.h"
 
 class controller{
 
