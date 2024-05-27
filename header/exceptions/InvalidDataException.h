@@ -1,0 +1,8 @@
+//
+// Created by HP on 27/05/2024.
+//
+
+#ifndef INVALIDDATAEXCEPTION_H
+#define INVALIDDATAEXCEPTION_H
+
+#endif //INVALIDDATAEXCEPTION_H
