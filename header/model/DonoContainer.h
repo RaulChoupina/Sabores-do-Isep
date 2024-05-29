@@ -5,4 +5,20 @@
 #ifndef DONOCONTAINER_H
 #define DONOCONTAINER_H
 
+#include "User.h"
+#include "DuplicatedEntryException.h"
+
+class DonoContainer{
+private:
+    string email;
+    string password;
+
+    DonoContainer ();
+    DonoContainer (string& pEmail, string& pPassword);
+    void setEmail (string& pEmail);
+
+public:
+    void set (string& pEmail , string& pPassword);
+}
+
 #endif //DONOCONTAINER_H
