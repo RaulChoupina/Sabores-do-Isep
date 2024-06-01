@@ -4,5 +4,16 @@
 
 #ifndef INVALIDDATAEXCEPTION_H
 #define INVALIDDATAEXCEPTION_H
+#include <exception>
+#include <string>
 
+using namespace std;
+
+class InvalidDataException :public exception{
+private:
+    string data;
+public:
+    InvalidDataException(string data);
+    cont char* what();
+};
 #endif //INVALIDDATAEXCEPTION_H
