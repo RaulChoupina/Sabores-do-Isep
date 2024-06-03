@@ -6,7 +6,7 @@
 #define USER_H
 
 #include <string>
-#include "DuplicatedEntryException.h"
+#include "DuplicatedDataException.h"
 #include "iostream"
 
 using namespace std;

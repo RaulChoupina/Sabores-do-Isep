@@ -6,7 +6,7 @@
 #define DONOCONTAINER_H
 
 #include "User.h"
-#include "DuplicatedEntryException.h"
+#include "DuplicatedDataException.h"
 
 class DonoContainer{
 private:
