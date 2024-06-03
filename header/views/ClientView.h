@@ -8,7 +8,7 @@
 #include "Client.h"
 #include "ClientContiner.h"
 
-       class Client view{
+       class ClientView{
        public:
        string getEmail();
        string getPassword();
