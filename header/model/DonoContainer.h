@@ -6,10 +6,9 @@
 #define DONOCONTAINER_H
 
 #include "User.h"
-#include "DuplicatedDataException.h"
 
-class DonoContainer{
-private:
+    class DonoContainer{
+    private:
     string email;
     string password;
 
