@@ -12,3 +12,30 @@ Container<Client> :: iterator ClientContainer:: searchByEmail(string &Email){
     }
     return it;
 }
+Container<Client> ClientContainer:: getAll(){
+    Constainer<Client> newClientContainer(this->clients);
+    return newClientContainer;
+}
+Client* ClientContainer::getByEmail(string &Email){
+    auto it= searchByEmail(Email);
+    if(it != this->clients.end()){
+        return &(*it);
+    }
+    return nullptr;
+}
+void ClientContainer::addClient(Client &client) {
+    string Email= client.getEmail();
+    auto it == searchByEmail(Email);
+    if(it== this->clients.end()){
+        this->clients.push_back(client);
+    }else{
+        string msg ="Client:" + Email;
+        throw DuplicatedDataException(msg);
+    }
+}
+void ClientContainer:: setActive(const unsigned int &clientID){
+
+}
+void ClientContainer:: setInactive(const unsigned int &clientID){
+    
+}
