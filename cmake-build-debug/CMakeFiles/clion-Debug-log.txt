@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\CMGM\Documents\GitHub\Sabores-do-Isep -B C:\Users\CMGM\Documents\GitHub\Sabores-do-Isep\cmake-build-debug
+"C:\Users\tomas\OneDrive\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\tomas\OneDrive\Documentos\GitHub\Sabores-do-Isep -B C:\Users\tomas\OneDrive\Documentos\GitHub\Sabores-do-Isep\cmake-build-debug
 CMake Deprecation Warning:
   Support for "Extra Generators" like
 
@@ -31,14 +31,14 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 -- The CXX compiler identification is GNU 13.1.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/gcc.exe - skipped
+-- Check for working C compiler: C:/Users/tomas/OneDrive/CLion 2024.1.1/bin/mingw/bin/gcc.exe - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/g++.exe - skipped
+-- Check for working CXX compiler: C:/Users/tomas/OneDrive/CLion 2024.1.1/bin/mingw/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done (3.5s)
+-- Configuring done (5.4s)
 -- Generating done (0.0s)
--- Build files have been written to: C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug
+-- Build files have been written to: C:/Users/tomas/OneDrive/Documentos/GitHub/Sabores-do-Isep/cmake-build-debug
