@@ -6,6 +6,7 @@
 #define CLIENTCONTAINER_H
 #include <list>
 #include "Client.h"
+#include <string>
 
 class ClientContainer{
 private:
