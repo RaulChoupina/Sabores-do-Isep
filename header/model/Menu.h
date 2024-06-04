@@ -20,7 +20,7 @@ class Menu{
             float price
             int amountInStock
             );
-    void setProductName(const string& name);
+    void setMenuName(const string& name);
     void setCategoryFood(const string& categoryFood);
     void setDescription(const string& description);
     void setPrice(float price);
