@@ -17,5 +17,5 @@
       string getName
       void MenuUnavailable();
       }
-      
+
 #endif //MENUVIEW_H
