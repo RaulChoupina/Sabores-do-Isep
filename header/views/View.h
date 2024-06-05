@@ -6,6 +6,12 @@
 #define VIEW_H
 
 #include <string>
+#define NAMESPACING 15
+#define USERNAMESPACING 15
+#define PASSWORDSPACING 30
+#define ADDRESSSPACING 30
+#define NIFSPACING 18
+#define QUANTITYSPACING 4
 
 using namespace std;
      class View{
