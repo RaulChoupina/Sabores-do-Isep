@@ -5,8 +5,7 @@
 #include "Utils.h"
 #include "InvalidDataException.h"
 
-ClientOrder :: ClientOrder (Date date, Client* client,float value){
-    this-> date=date;
+ClientOrder :: ClientOrder (Client* client,float value){
     this->setClient(client);
     this->setValue(value);
 }

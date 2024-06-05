@@ -3,7 +3,7 @@
 //
 #include "Client.h"
 #include <utility>
-#incluse "User.h"
+#include "User.h"
 using namespace std;
 
 Client :: Client(string &pEmail,string &pPassword) : User(pEmail, pPassword){
@@ -11,7 +11,7 @@ Client :: Client(string &pEmail,string &pPassword) : User(pEmail, pPassword){
     this -> setPassword(pPassword);
 }
 
-Void Client :: setActive(){
+void Client :: setActive(){
     if(isActive == 1){
         cout<< "client already active"<<endl;
         return;
