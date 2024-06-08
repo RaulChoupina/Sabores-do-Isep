@@ -5,6 +5,7 @@
 #ifndef SUPPLIERORDERVIEW_H
 #define SUPPLIERORDERVIEW_H
 
+#include <iostream>
 #include "SupplierOrder.h"
 #include "View.h"
 #include "SupplierOrderContainer.h"

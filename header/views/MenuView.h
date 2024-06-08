@@ -5,6 +5,7 @@
 #ifndef MENUVIEW_H
 #define MENUVIEW_H
 
+#include <iostream>
 #include "Menu.h"
 #include "View.h"
 
