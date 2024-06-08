@@ -15,6 +15,9 @@
       void printClientOrdersByClient(ClientOrderContainer& ClientOrders, Client& client);
       void printAllClientOrders (ClientOrderContainer& ClientOrders);
       void ViewAllClientsOrders ();
+      void ViewOrdersFromAClient();
+      void orderPlaced();
+      void thereAreNoOrders();
 
 }
 #endif //SABORES_DO_ISEP_CLIENTORDERVIEW_H
