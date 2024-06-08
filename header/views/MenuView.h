@@ -5,6 +5,7 @@
 #ifndef MENUVIEW_H
 #define MENUVIEW_H
 
+#include <iostream>
 #include "Menu.h"
 #include "View.h"
 
@@ -14,7 +15,7 @@
       void printMenuClient (Menu & menu);
       void printMenuContainerClient (container < Menu >& menu, const string& containerTitle);
       void printMenuContainerDono (container < Menu >& menu, const string& containerTitle);
-      string getName
+      string getName();
       void MenuUnavailable();
       }
 

@@ -1,11 +1,10 @@
 //
 // Created by HP on 27/05/2024.
 //
-#include "supplierOrder.h"
+#include "SupplierOrder.h"
 #include "Utils.h"
 
-SupplierOrder:: SupplierOrder (Date date, Supplier *pSupplier,float value){
-    this->date =date;
+SupplierOrder:: SupplierOrder (Supplier *pSupplier,float value){
     this-> setSupplier(pSupplier);
     this-> setValue(value);
 }

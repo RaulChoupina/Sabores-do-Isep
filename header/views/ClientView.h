@@ -5,6 +5,7 @@
 #ifndef SABORES_DO_ISEP_CLIENTVIEW_H
 #define SABORES_DO_ISEP_CLIENTVIEW_H
 
+#include <iostream>
 #include "Client.h"
 #include "ClientContiner.h"
 

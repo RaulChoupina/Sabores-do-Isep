@@ -5,6 +5,7 @@
 #ifndef SABORES_DO_ISEP_CLIENTORDERVIEW_H
 #define SABORES_DO_ISEP_CLIENTORDERVIEW_H
 
+#include <iostream>
 #include "ClientOrder.h"
 #include "ClientOrderContainer.h"
 #include "View.h"
@@ -15,6 +16,9 @@
       void printClientOrdersByClient(ClientOrderContainer& ClientOrders, Client& client);
       void printAllClientOrders (ClientOrderContainer& ClientOrders);
       void ViewAllClientsOrders ();
+      void ViewOrdersFromAClient();
+      void OrderPlaced();
+      void ThereAreNoOrders();
 
 }
 #endif //SABORES_DO_ISEP_CLIENTORDERVIEW_H

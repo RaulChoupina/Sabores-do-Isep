@@ -5,6 +5,7 @@
 #ifndef SABORES_DO_ISEP_SUPPLIERVIEW_H
 #define SABORES_DO_ISEP_SUPPLIERVIEW_H
 
+#include <iostream>
 #include "Supplier.h"
 #include "SupplierContainer.h"
 

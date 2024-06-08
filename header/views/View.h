@@ -7,11 +7,12 @@
 
 #include <string>
 #define NAMESPACING 15
-#define USERNAMESPACING 15
+#define EMAILPACING 30
 #define PASSWORDSPACING 30
 #define ADDRESSSPACING 30
 #define NIFSPACING 18
 #define QUANTITYSPACING 4
+#define PRICESPACING 9
 
 using namespace std;
      class View{
