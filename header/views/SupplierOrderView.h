@@ -12,11 +12,11 @@
         class SupplierOrder{
         public:
         SupplierOrder getSupplierOrder();
+        string getName();
         string getAmountInStock();
         void printSupplierOrdersBySupplier(SupplierOrderConstainer& supplierOrders, Supplier& supplier);
         void printAllSupplierOrders(SupplierOrderContainer& supplierOrders);
         void orderPlaced();
         void thereAreNoOrders();
-        string getName();
 }
 #endif //SUPPLIERORDERVIEW_H

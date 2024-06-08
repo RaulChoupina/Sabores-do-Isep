@@ -12,6 +12,7 @@
 #define ADDRESSSPACING 30
 #define NIFSPACING 18
 #define QUANTITYSPACING 4
+#define PRICESPACING 9
 
 using namespace std;
      class View{
