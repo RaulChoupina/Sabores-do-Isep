@@ -1,9 +1,9 @@
 //
 // Created by HP on 27/05/2024.
 //
+#include <iostream>
 #include "SupplierView.h"
 #include "Utils.h"
-#include <iomanip>
 
 #define SUPPLIERCONTAINERPACING 10
 
