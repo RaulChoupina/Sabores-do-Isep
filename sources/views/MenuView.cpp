@@ -29,7 +29,7 @@ void MenuView::printMenuContainerClient (container < Menu >& menu, const string&
      cout << "Name";
 
      cout << endl;
-     for (auto it=products.begin(); it != products.end(); ++it){
+     for (auto it=menu.begin(); it != menu.end(); ++it){
      cout << setw(PRICESPACING) << it -> getPrice();
      cout << " " << it->getName() << endl;
      }
@@ -48,7 +48,7 @@ void MenuView::printMenuContainerDono (container < Menu >& menu, const string& c
      cout << " Name";
 
      cout << endl;
-     for (auto it=products.begin(); it != products.end(); ++it){
+     for (auto it=menu.begin(); it != menu.end(); ++it){
      cout << setw(PRICESPACING) << it->getPrice();
      cout << setw(QUANTITYSPACING) << it->getAmountInStock();
      cout << " " << it->getName() << endl;
