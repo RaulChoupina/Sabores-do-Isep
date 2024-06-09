@@ -7,7 +7,7 @@
 
 using namespace std;
 
-Menu MenuView::getMenu(cons string& name){
+Menu MenuView::getMenu(const string& name){
      string Name;
      string Description;
      float Price;
