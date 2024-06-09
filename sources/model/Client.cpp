@@ -1,9 +1,11 @@
 //
 // Created by HP on 27/05/2024.
 //
+#include <iostream>
 #include "Client.h"
 #include <utility>
 #include "User.h"
+
 using namespace std;
 
 Client :: Client(string &pEmail,string &pPassword) : User(pEmail, pPassword){

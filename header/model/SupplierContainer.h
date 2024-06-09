@@ -4,16 +4,19 @@
 
 #ifndef SUPPLIERCONTAINER_H
 #define SUPPLIERCONTAINER_H
-#include <list>
+
+#include <iostream>
+#include <container>
 #include "Supplier.h"
+
 class SupplierContainer{
 private:
-    list<Supplier> supplier;
-    list<Supplier>:: iterator searchByName(string& name);
+    container<Supplier> supplier;
+    container<Supplier>:: iterator searchByName(string& name);
 public:
     supplier* getByName(string& name);
-    list<Supplier> getAll();
+    container<Supplier> getAll();
     void addSupplier(const Supplier& supplier);
     void toggleState(string& name);
-};
+}
 #endif //SUPPLIERCONTAINER_H

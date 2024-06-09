@@ -4,21 +4,22 @@
 
 #ifndef SUPPLIERORDER_H
 #define SUPPLIERORDER_H
+
+#include <iostream>
 #include "Order.h"
 #include "Menu.h"
 #include "Supplier.h"
-class   Supplier;
 
-calss SupplierOrder :public Order{
+class SupplierOrder :public Order{
 private:
     supplier* supplier{};
 public:
     SupplierOrder() = default;
-    SupplierOrder(Date date, Supplier* pSupplier, float value);
+    SupplierOrder(Supplier* pSupplier, float value);
     void setSupplier(Supplier* pSupplier);
     Supplier* getSupplier();
 
     SupplierOrder &get();
-};
+}
 
 #endif //SUPPLIERORDER_H

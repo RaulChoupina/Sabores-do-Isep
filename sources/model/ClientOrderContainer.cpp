@@ -1,10 +1,10 @@
 //
 // Created by HP on 27/05/2024.
 //
+#include <iostream>
 #include "ClientOrderContainer.h"
 
 ClientOrderContainer::ClientOrderContainer(){
-
 }
 void  ClientOrderContainer::add(const ClientOrder &pClientOrder){
     this ->clientOrders.push_back(pClientOrder);

@@ -5,6 +5,7 @@
 #ifndef SUPPLIER_H
 #define SUPPLIER_H
 
+#include <iostream>
 #include <string>
 #include "SupplierOrder.h"
 using unsigned std;

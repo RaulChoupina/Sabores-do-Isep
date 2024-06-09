@@ -5,9 +5,10 @@
 #ifndef CLIENT_H
 #define CLIENT_H
 
+#include <iostream>
 #include <string>
 #include "User.h"
-#include <list>
+
 
 using namespace std;
 

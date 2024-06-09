@@ -1,9 +1,10 @@
 //
 // Created by HP on 27/05/2024.
 //
+#include <iostream>
 #include "ClientContainer.h"
 
-Container<Client> :: iterator ClientContainer:: searchByEmail(string &Email){
+Container <Client> :: iterator ClientContainer:: searchByEmail(string &Email){
     auto it =this->clients.begin();
     for(; it!= this->clients.end(); ++it){
         if((*it)== Email){

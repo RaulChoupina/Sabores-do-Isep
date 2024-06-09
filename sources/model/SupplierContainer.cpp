@@ -1,7 +1,8 @@
 //
 // Created by HP on 27/05/2024.
 //
-#include "SupplierContainer.h
+#include <iostream>
+#include "SupplierContainer.h"
 
 Container<Supplier> SupplierContainer:getAll() {
     Container <Supplier> SupplierContainer(this->suppliers);
