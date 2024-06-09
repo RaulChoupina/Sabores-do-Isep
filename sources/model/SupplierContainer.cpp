@@ -17,34 +17,34 @@ Container<Supplier>:: iterator SupplierContainer::searchByEmail (string &Email) 
     }
     return it;
 }
-Supplier *SupplierContainer::getByName(string& name){
-    auto it = searchByName(name);
+Supplier *SupplierContainer::getByEmail(string& emais){
+    auto it = searchByEmail(email);
     if (it != this ->suppliers.end()){
         return &(*it);
     }
     return nullptr;
 }
 void SupplierContainer:: addSupplier(const Supplier &supplier){
-    string name = supplier.getName();
-    auto it = searchByName (name);
+    string email = supplier.getEmail();
+    auto it = searchByEmail (email);
     if (it == this ->suppliers.end()){
         this->suppliers.push_back(supplier);
     }else{
-        string msg ="Supplier:"+ name;
+        string msg ="Supplier:"+ email;
         throw DuplicateDataException(msg);
     }
 }
-void SupplierContainer::toggleState (string& name){
-    auto it =searchByName (name);
+void SupplierContainer::toggleState (string& email){
+    auto it =searchByName (email);
     if (it == this->suppliers.end()){
         this -> suppliers.push_back(supplier);
     }else{
-        string msg ="Supplier:" + name;
+        string msg ="Supplier:" + email;
         throw DuplicateDataException (msg);
     }
 }
-void SupplierContainer:: toogleState(string& name){
-    auto it = searchByName(name);
+void SupplierContainer:: toogleState(string& email){
+    auto it = searchByName(email);
     if(it != this-> suppliers.end()){
         it->toggleState();
     }
