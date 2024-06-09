@@ -14,8 +14,8 @@
        string getSupplierName();
        void printSupplier (Supplier* supplier);
        void printSupplier (container<Supplier>& supplier);
-       void invalidSupplier();
-       void orderPlaced();
+       void InvalidSupplier();
+       void OrderPlaced();
 }
 
 #endif //SABORES_DO_ISEP_SUPPLIERVIEW_H

@@ -26,11 +26,11 @@ void SupplierView:: printSupplier(Supplier*supplier){
 string SupplierView:: getSupplierName(){
      return Utils:: getString ("insert supplier name");
      }
-void SupplierView:: invalidSupplier(){
-     cout << "invalid supplier";
+void SupplierView:: InvalidSupplier(){
+     cout << "Invalid supplier";
      }
-void SupplierView:: orderPlaced(){
-     cout << "order placed";
+void SupplierView:: OrderPlaced(){
+     cout << "Order placed";
      }
 
 
