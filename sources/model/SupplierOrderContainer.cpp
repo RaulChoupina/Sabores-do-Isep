@@ -26,7 +26,7 @@ SupplierOrderContainer::SupplierOrderContainer(){
 
 }
 Container<SupplierOrder> SupplierOrderContainer::getAll(){
-    Container<SupplierOrder>newSupplierOrderContainer (this-> supplierOrders)
+    Container<SupplierOrder>newSupplierOrderContainer (this-> supplierOrders);
     return newSupplierOrdersContainer;
 }
 SupplierOrderContainer
