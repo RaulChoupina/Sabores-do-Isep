@@ -24,7 +24,7 @@ void SupplierView:: printSupplier(Supplier*supplier){
      cout << setw(P) << supplier-> getState() << endl;
      }
 string SupplierView:: getSupplierName(){
-     return Utils:: getString ("insert supplier name");
+     return Utils:: getString ("Insert Supplier Name");
      }
 void SupplierView:: InvalidSupplier(){
      cout << "Invalid supplier";
