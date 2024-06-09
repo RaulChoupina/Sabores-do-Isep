@@ -8,10 +8,10 @@ Container<Supplier> SupplierContainer:getAll() {
     Container <Supplier> SupplierContainer(this->suppliers);
     return newSupplierContainer;
 }
-Container<Supplier>:: iterator SupplierContainer::searchByName (string &name) {
+Container<Supplier>:: iterator SupplierContainer::searchByEmail (string &Email) {
     auto it = this->suppliers.begin();
     for (; it != this->suppliers.end(); ++i) {
-        if ((*it) == name) {
+        if ((*it) == Email) {
             return it;
         }
     }

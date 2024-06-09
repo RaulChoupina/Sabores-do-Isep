@@ -4,8 +4,8 @@
 #include <iostream>
 #include "Supplier.h"
 
-Supplier:: Supplier (string& name,bool isActive){
-    setName(name);
+Supplier:: Supplier (string& Email,bool isActive){
+    setEmail(email);
     if(isActive){
         setActive();
     }else{
@@ -13,8 +13,8 @@ Supplier:: Supplier (string& name,bool isActive){
     }
 }
 
-string Supplier:: getName() const{
-    return name;
+string Supplier:: getEmail() const{
+    return Email;
 }
 
 string Supplier:: getState() const{
@@ -36,18 +36,18 @@ void Supplier:: setActive(){
 void Supplier:: setInactive(){
     this->isActive =false;
 }
-void Supplier:: setName( const string &pName){
-    this-> name =pName
+void Supplier:: setEmail( const string &pEmail){
+    this-> Email =pEmail
 }
 
 bool Supplier:: operator== (const Supplier &obj) const{
-    if(this ->getName()== obj.getName()){
+    if(this ->getEmail()== obj.getEmail()){
         return true;
     }return false;
 }
 
-bool Supllier:: operator == (string &name) const{
-    if (this->name == name){
+bool Supllier:: operator == (string &Email) const{
+    if (this->email == email){
         return true;
     }return false;
 }
