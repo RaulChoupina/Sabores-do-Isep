@@ -10,24 +10,24 @@ void ClientOrderView:: OrderPlaced() {
 }
 void ClientOrderView::printClientOrdersByClient(ClientOrderContainer &clientOrders, Client &client) {
     cout << "Orders placed by " << client.getName() << endl;
-    cout << setw(PRICESPACING) << "Value" << endl;
+    cout << setw(PRICESPACING) << "Price" << endl;
 
     Client* clientPtr = &client;
     container<ClientOrder> tempClientOrders = clientOrders.getClientOrdersByClient(clientPtr, clientOrders).getAll();
     auto it = tempClientOrders.begin();
     for (int i = 1; it != tempClientOrders.end(); ++it, ++i){
-        cout << setw(PRICESPACING) << it->getValue() << endl;
+        cout << setw(PRICESPACING) << it->getPrice() << endl;
     }
 }
 void ClientOrderView:: printAllClientOrders(ClientOrderContainer& ClientOrders){
     cout << "Clients orders" << endl;
     cout << setw(NAMESPACING) << "Name" << endl;
-    cout << setw(PRICESPACING) << "Value" << endl;
+    cout << setw(PRICESPACING) << "Price" << endl;
 
     container < ClientOrder > tempClientOrders = ClientOrders.getAll();
     auto it = tempClientOrders.begin();
     for (int i = 1; it != tempClientOrders.end(); ++it, ++i){
-        cout << setw(PRICESPACING) << it->getValue() << endl;
+        cout << setw(PRICESPACING) << it->getPrice() << endl;
         cout << setw(NAMESPACING) << it->getName() << endl;
     }
 }
