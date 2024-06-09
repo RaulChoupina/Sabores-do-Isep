@@ -17,7 +17,7 @@
         string getAmountInStock();
         void printSupplierOrdersBySupplier(SupplierOrderConstainer& supplierOrders, Supplier& supplier);
         void printAllSupplierOrders(SupplierOrderContainer& supplierOrders);
-        void orderPlaced();
-        void thereAreNoOrders();
+        void OrderPlaced();
+        void ThereAreNoOrders();
 }
 #endif //SUPPLIERORDERVIEW_H
