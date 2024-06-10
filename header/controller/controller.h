@@ -23,6 +23,8 @@ private:
     SupplierOrderView   supplierOrderView;
     ProductView         productView;
 
+    void runLogin();
+    void runCreateAccount();
     void runClients();
     void runClientOrders();
     void runSuppliers();
