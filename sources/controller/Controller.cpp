@@ -25,6 +25,6 @@ void Controller::run(){
 
     }While(val !=0);
 }else{
-    runClients();
+    runClient();
 }
 }
