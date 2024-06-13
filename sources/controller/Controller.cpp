@@ -29,6 +29,53 @@ void Controller::run(){
 }
 }
 
-controller::runClients(){
-lists<Menu> menus = this->model.
+void Controller::runLogin(){
+
+    string email = this->clientView.getEmail()
+
+    if(email == this->model.getManager()->getEmail()){
+        string password = this->clientView.getPassword();
+        if(this->model.getManager()->getPassword() == password){
+            loggedUser = this->model.getManager();
+            cout << "Welcome Big Boss!";
+            runManager();
+            return;
+        }else{
+            this->clientView.incorrectPassword();
+        }
+    }
+
+    ClientContainer& clientContainer = this->model.getClientContainer();
+    Client*  tempClient = clientContainer.getByEmail(email);
+
+    if(tempClient == nullptr){
+        this->clientView.invalidUsername();
+        return;
+    }
+    string password = this->clientView.getPassword();
+
+    if(tempClient->doesPasswordMatch(password)){
+        this->login((User*)tempClient);
+        cout<<"Login Successful";
+        runClient();
+    }else{
+        this->clientView.incorrectPassword();
+    }
+
+}
+
+void Controller::runCreateAccount() {
+    ClientContainer& clientContainer = this->model.getClientContainer();
+    string email = this->clientView.getEmail();
+    if(email == this->model.getManager()->getEmail()){
+        this->clientView.invalidEmail();
+        return;
+    }
+    if(clientList.getByEmail(email) != nullptr){
+        cout << "Email already taken.";
+        return;
+    }
+    string password = this->clientView.getPassword();
+    Client newClient(email, password);
+    clientContainer.addClient(newClient);
 }
