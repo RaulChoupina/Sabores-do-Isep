@@ -17,12 +17,12 @@ Menu MenuView::getMenu(const string& name){
 
      Name = Utils:: getString("Name");
      Description = Utils:: getString("Description");
+     CategoryFood = Utils:: getString("CategoryFood");
+     AmountInStock = Utils:: getNumber("AmountInStock");
      SellingPrice = Utils:: getFloat("SellingPrice");
      SupplierPrice = Utils:: getFloat("SupplierPrice");
-     AmountInStock = Utils:: getNumber("AmountInStock");
-     CategoryFood = Utils:: getString("CategoryFood");
 
-     Menu menu ( Name , Description , SupplierPrice , SellingPrice , AmountInStock , CategoryFood);
+     Menu menu ( Name , Description , CategoryFood , AmountInStock , SupplierPrice , SellingPrice);
      return Menu;
 }
 void MenuView::printMenuContainerClient (container < Menu >& menu, const string& containerTitle){
