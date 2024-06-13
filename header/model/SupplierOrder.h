@@ -15,7 +15,7 @@ private:
     supplier* supplier{};
 public:
     SupplierOrder() = default;
-    SupplierOrder(Supplier* pSupplier, float value);
+    SupplierOrder(Supplier* pSupplier, float SupplierPrice);
     void setSupplier(Supplier* pSupplier);
     Supplier* getSupplier();
 
