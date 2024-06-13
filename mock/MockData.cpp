@@ -23,7 +23,7 @@ void MockData:: loadMockClients (ClientContainer& clientContainer){
 
         stringstream iss(line);
 
-        for (int col = 0; col < columns; ++col)
+        for (int col = 0; col < cols; ++col)
         {
             string val;
             getline(iss, val, ',');
