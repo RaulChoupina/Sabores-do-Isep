@@ -6,9 +6,9 @@
 #include "Utils.h"
 #include "InvalidDataException.h"
 
-ClientOrder :: ClientOrder (Client* client,float value){
+ClientOrder :: ClientOrder (Client* client,float SellingPrice){
     this->setClient(client);
-    this->setValue(value);
+    this->setSellingPrice (SellingPrice);
 }
 void ClientOrder:: setClient(client *pClient){
     if(pClient != nullptr){

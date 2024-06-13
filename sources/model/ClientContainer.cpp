@@ -34,9 +34,9 @@ void ClientContainer::addClient(Client &client) {
         throw DuplicatedDataException(msg);
     }
 }
-void ClientContainer:: setActive(const unsigned int &clientID){
+void ClientContainer:: setActive(string &clientEmail){
 
 }
-void ClientContainer:: setInactive(const unsigned int &clientID){
+void ClientContainer:: setInactive(string &clientEmail){
     
 }
