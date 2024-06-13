@@ -17,8 +17,8 @@ Menu MenuView::getMenu(const string& name){
 
      Name = Utils:: getString("Name");
      Description = Utils:: getString("Description");
-     SellingPrice = Utils:: getFloat("Price");
-     SupplierPrice = Utils:: getFloat("Price");
+     SellingPrice = Utils:: getFloat("SellingPrice");
+     SupplierPrice = Utils:: getFloat("SupplierPrice");
      AmountInStock = Utils:: getNumber("AmountInStock");
      CategoryFood = Utils:: getString("CategoryFood");
 
