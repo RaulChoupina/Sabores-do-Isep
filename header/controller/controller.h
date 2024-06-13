@@ -4,6 +4,7 @@
 
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
+#include < iostream>
 #include "SaboresIsep.h"
 #include "View.h"
 #include "ClientView.h"
@@ -29,7 +30,7 @@ private:
     void runClientOrders();
     void runSuppliers();
     void runSupplierOrders();
-    void runProducts();
+    void runMenu();
 public:
     controller(SaboresIsep& saboresIsep);
     void run();
