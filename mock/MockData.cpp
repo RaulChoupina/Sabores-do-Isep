@@ -61,14 +61,13 @@ for(int i = 1; i < rows; ++i){
     replace(data[i][4].begin(), data[i][4].end(), ',','.');
     replace(data[i][5].begin(), data[i][5].end(), ',','.');
 
-    bool available = stoi(data[i][8]) ;
-    Product product(data[i][0],
+    Menu menu(data[i][0],
                     data[i][1],
                     data[i][2],
                     stoi(data[i][3]),
                     stof(data[i][4]),
-                    stof(data[i][5]);
-    menuContainer.add(product);
+                    stof(data[i][5]));
+    menuContainer.add(menu);
     }
 }
 void MockData:: loadMockSuppliers (SupplierContainer& supplierContainer){
