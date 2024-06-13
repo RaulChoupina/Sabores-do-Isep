@@ -11,7 +11,8 @@
 class Menu{
     private:
         string name;
-        float price;
+        float supplierPrice;
+        float sellingPrice;
         string categoryFood;
         string description;
         int amountInStock;
@@ -20,21 +21,24 @@ class Menu{
             const string& name
             const string& categoryFood
             const string& description
-            float price
+            float supplierPrice
+            float sellingPrice
             int amountInStock
             );
     void setMenuName(const string& name);
     void setCategoryFood(const string& categoryFood);
     void setDescription(const string& description);
-    void setPrice(float price);
+    void setSupplierPrice(float supplierPrice);
+    void setSellingPrice(float sellingPrice);
     void setAmountInStock(int amountInStock);
 
     Menu& get();
     const string& getName() const;
     const string& getCategoryFood() const;
     const string& getDescription() const;
-    float getPrice() const;
+    float getSupplierPrice() const;
+    float getSellingPrice() const;
     int getAmountInStock() const;
-};
+}
 
 #endif //MENU_H
