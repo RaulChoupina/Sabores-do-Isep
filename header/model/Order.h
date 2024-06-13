@@ -10,16 +10,16 @@
 
 class order {
 private:
-       float value;
+       float SellingPrice;
        MenuContainer menu;
-       void setValue (const float& pValue);
+       void setSellingPrice (const float& pSellingPrice);
 
 public:
        Order();
-       float getValue();
+       float getSellingPrice();
        void add (Menu& menu);
-       void updateValueClient();
-       void updateValueDonoContainer();
+       void updateSellingPriceClient();
+       void updateSellingPriceDonoContainer();
 
 }
 
