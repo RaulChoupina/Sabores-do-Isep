@@ -7,7 +7,7 @@
 container<Menu>::iterator MenuContainer::search(const string& name) {
     auto it = this->menus.begin();
     for (; it != this->menus.end(); ++it){
-        if((it->getNAME()) == name){
+        if((it->getName()) == name){
             return it;
         }
     }
@@ -17,7 +17,7 @@ container<Menu>::iterator MenuContainer::search(const string& name) {
 container<Menu>::iterator MenuContainer::search(const Product &obj) {
     auto it = this->menus.begin();
     for (; it != this->menus.end(); ++it){
-        if((it->getNAME()) == obj.getNAME()){
+        if((it->getName()) == obj.getName()){
             return it;
         }
     }
@@ -28,7 +28,7 @@ Container<Menu> MenuContainer::getAll() {
 }
 Menu* MenuContainer::get(const string& name) {
     auto it = search(name);
-    if(it != this->names.end()){
+    if(it != this->menus.end()){
         return &(*it);
     }
     return nullptr;
@@ -38,7 +38,21 @@ void MenuContainer::add(const Menu obj) {
     if(it == this->menus.end()){
         this->menus.push_back(obj);
     }else{
-        string msg = "Product: " + obj.getNAME();
-        throw DuplicateEntryException(msg);
+        string msg = "Menu: " + obj.getName();
+        throw DuplicatedEntryException(msg);
     }
+}
+void MenuContainer::edit(const string &name, const string &description, const string &categoryFood, int amountInStock, float supplierPrice, float sellingPrice){
+     container < Menu >::iterator it = search(name);
+     if(it !=this ->menus.end()){
+     it -> setMenuName(name);
+     it -> setMenuCategoryFood(categoryFood);
+     it -> setMenuDescription(description);
+     it -> setMenuAmountInStock(amountInStock);
+     it -> setMenuSupplierPrice(supplierPrice);
+     it -> setMenuSellingPrice(sellingPrice);
+     }
+}
+void MenuContainer::reset() {
+    this-> menus.clear();
 }
