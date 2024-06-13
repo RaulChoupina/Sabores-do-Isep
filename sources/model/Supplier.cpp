@@ -36,8 +36,8 @@ void Supplier:: setActive(){
 void Supplier:: setInactive(){
     this->isActive =false;
 }
-void Supplier:: setName( const string &pEmail){
-    this-> Name =pEmail
+    void Supplier:: setName( const string &pName){
+    this-> Name = pName
 }
 
 bool Supplier:: operator== (const Supplier &obj) const{

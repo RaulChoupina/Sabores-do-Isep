@@ -24,7 +24,7 @@ public:
     int getSize(clientOrderContainer& clientOrderContainer);
     container <ClientOrder> getAll();
     ClientOrderContainer getClientOrders();
-    ClientOrderContainer getClientOrdersByClient(Client* pClient, ClientOrderContainer& listClientOrderContainer);
+    ClientOrderContainer getClientOrdersByClient(Client* pClient, ClientOrderContainer& ContainerClientOrderContainer);
     bool DidClientMadeOrder(Client* pClient, ClinetOrderContainer& listClientOrderContainer);
     void setClients(ClientContainer* clients);
     void setMenu(Menu* menus);

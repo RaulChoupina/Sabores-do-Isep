@@ -5,25 +5,21 @@
 #include "Order.h"
 
 Order::Order(){
-    setValue (0);
+    setSellingPrice (0);
 }
-float Order::getValue(){
-    return this ->value
+float Order::getSellingPrice(){
+    return this ->SellingPrice
 }
-void Order:: setValue (cont float &pValue){
-    this ->value =pValue;
+void Order:: setSellingPrice (cont float &pSellingPrice){
+    this ->sellingPrice =pSellingPrice;
 }
 
 void Order:: add(Menu &menu){
-    this ->value = pValue;
+    this ->sellingPrice = pSellingPrice;
 }
-
-string Order:: getDate(){
-    return this -> date.getDate();
-}
-void Order:: updatedValueClient(){
-    float tempValue = 0;
+void Order:: updatedSellingPriceClient(){
+    float tempSellingPrice = 0;
     Container<Menu> tempMenu = this ->Menu.getAll();
     auto it = tempMenu.begin();
-    value =tempValue;
+    sellingPrice = tempSellingPrice;
 }

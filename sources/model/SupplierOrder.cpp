@@ -5,9 +5,8 @@
 #include "SupplierOrder.h"
 #include "Utils.h"
 
-SupplierOrder:: SupplierOrder (Supplier *pSupplier,float value){
+SupplierOrder:: SupplierOrder (Supplier *pSupplier,float SupplierPrice){
     this-> setSupplier(pSupplier);
-    this-> setPrice(price);
 }
 void SupplierOrder:: setSupplier (supplier *pSupplier){
     if (psupplier !=nullptr){
