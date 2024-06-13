@@ -2,7 +2,8 @@
 // Created by HP on 27/05/2024.
 //
 #include "Menu.h"
-Menu::menu(const steing &name,
+#include <iostream>
+Menu::menu(const string &name,
            const string &description,
            const string &categoryFood,
            int amountInStock,
