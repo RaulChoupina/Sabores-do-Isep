@@ -31,6 +31,7 @@ private:
     void runSuppliers();
     void runSupplierOrders();
     void runMenu();
+    void runDono();
 public:
     controller(SaboresIsep& saboresIsep);
     void run();
