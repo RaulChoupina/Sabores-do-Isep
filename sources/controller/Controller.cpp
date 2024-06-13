@@ -23,7 +23,7 @@ void Controller::run(){
                 break;
         }
 
-    }While(val !=0);
+    } while(val !=0);
 }else{
     runClient();
 }
@@ -33,12 +33,12 @@ void Controller::runLogin(){
 
     string email = this->clientView.getEmail()
 
-    if(email == this->model.getManager()->getEmail()){
+    if(email == this->model.getDono()->getEmail()){
         string password = this->clientView.getPassword();
-        if(this->model.getManager()->getPassword() == password){
-            loggedUser = this->model.getManager();
+        if(this->model.getDono()->getPassword() == password){
+            loggedUser = this->model.getDono();
             cout << "Welcome Big Boss!";
-            runManager();
+            runDono();
             return;
         }else{
             this->clientView.incorrectPassword();
@@ -49,7 +49,7 @@ void Controller::runLogin(){
     Client*  tempClient = clientContainer.getByEmail(email);
 
     if(tempClient == nullptr){
-        this->clientView.invalidUsername();
+        this->clientView.invalidEmail();
         return;
     }
     string password = this->clientView.getPassword();
@@ -67,7 +67,7 @@ void Controller::runLogin(){
 void Controller::runCreateAccount() {
     ClientContainer& clientContainer = this->model.getClientContainer();
     string email = this->clientView.getEmail();
-    if(email == this->model.getManager()->getEmail()){
+    if(email == this->model.getDono()->getEmail()){
         this->clientView.invalidEmail();
         return;
     }
