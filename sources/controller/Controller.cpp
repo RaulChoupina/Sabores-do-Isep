@@ -28,3 +28,7 @@ void Controller::run(){
     runClient();
 }
 }
+
+controller::runClients(){
+lists<Menu> menus = this->model.
+}
