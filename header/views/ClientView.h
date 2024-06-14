@@ -18,7 +18,7 @@
        unsigned int getNif();
        void invalidEmail();
        void incorrectPassword();
-       void printClientContainerDono(list<Client>& clients, const string& containerTitle);
+       void printClientContainerDono(container<Client>& clients, const string& containerTitle);
        void ClientNotFound ();
 
 }
