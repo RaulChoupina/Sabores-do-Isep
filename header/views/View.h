@@ -18,12 +18,11 @@ using namespace std;
      class View{
      public:
      View();
+     int menuMain();
      int menuDono();
      int menuClient();
-     int menuClientOrder();
      int menuMenu();
-     int menuSupplier();
-     int menuSupplierOrder();
+     int menuSuppliers();
 }
 
 #endif //VIEW_H
