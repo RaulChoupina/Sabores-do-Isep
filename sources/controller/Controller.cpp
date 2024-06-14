@@ -253,3 +253,14 @@ void Controller::runClientOrders() {
     this->clientOrderView.printClientOrdersByClient(tempClientOrderContainer, *(Client*)loggedUser);
 }
 
+void Controller::runToggleMenuAvailability() {
+    string name = this->MenuView.getNAME();
+    MenuContainer& modelMenuContainer = this->model.getMenuContainer();
+    if(modelMenuContainer.get(name) == nullptr){
+        this->menuView.invalidNAME();
+        return;
+    }
+    Menu* menu = modelMenuContainer.get(name);
+    MenuContainer* cartMenuContainer = this->cart.getMenuContainer();
+    modelMenuContainer.toggleAvailability(menu, cartMenuContainer);
+}
