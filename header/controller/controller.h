@@ -22,16 +22,23 @@ private:
     ClientOrderView     clientOrderView;
     SupplierView        supplierView;
     SupplierOrderView   supplierOrderView;
-    ProductView         productView;
+    MenuView            menuView;
 
     void runLogin();
     void runCreateAccount();
     void runClients();
+    void runMenus();
     void runClientOrders();
     void runSuppliers();
     void runSupplierOrders();
     void runMenu();
     void runDono();
+    void runViewAllClientsOrders();
+    void runManageMenus();
+    void runManageClients();
+    void runManageSuppliers();
+    void runToggleSupplierState();
+    void runEditMenu();
 public:
     controller(SaboresIsep& saboresIsep);
     void run();

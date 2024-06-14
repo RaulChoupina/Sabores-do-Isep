@@ -63,7 +63,6 @@ void Controller::runLogin(){
     }
 
 }
-
 void Controller::runCreateAccount() {
     ClientContainer& clientContainer = this->model.getClientContainer();
     string email = this->clientView.getEmail();
@@ -71,7 +70,7 @@ void Controller::runCreateAccount() {
         this->clientView.invalidEmail();
         return;
     }
-    if(clientList.getByEmail(email) != nullptr){
+    if(clientContainer.getByEmail(email) != nullptr){
         cout << "Email already taken.";
         return;
     }
