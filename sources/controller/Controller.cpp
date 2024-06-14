@@ -84,8 +84,8 @@ void Controller:: runClient()::{
     auto* loggedClient = (Client*)this-> loggedUser;
     ClientOrderContainer& clientOrderContainer = this-> model.getClientOrderContainer();
     do{
-        op= this->view.menuClient();
-        switch(op){
+        val= this->view.menuClient();
+        switch(val){
             case 1:
                 runMenu();
                 break;
@@ -94,9 +94,13 @@ void Controller:: runClient()::{
                     else{
                         cout << "Client has not made any Orders.";
                     }
-                    op= -1
+                    val= -1
+                            break;
+                    default:
+                        break;
                 }
-        }
+        }while( val!= 0)
+            loggout();
     }
 }
 
