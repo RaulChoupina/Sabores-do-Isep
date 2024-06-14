@@ -30,7 +30,6 @@ private:
     void runMenus();
     void runClientOrders();
     void runSupplierOrders();
-    void runMenu();
     void runDono();
     void runViewAllClientsOrders();
     void runDonoMenus();
