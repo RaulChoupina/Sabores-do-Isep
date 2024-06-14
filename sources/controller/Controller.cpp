@@ -79,3 +79,31 @@ void Controller::runCreateAccount() {
     Client newClient(email, password);
     clientContainer.addClient(newClient);
 }
+
+void Controller:: runClient()::{
+    int op =-1;
+    auto* loggedClient = (Client*)this-> loggedUser;
+    ClientOrderContainer& clientOrderConatiner = this-> model.getClientOrderContainer();
+    do{
+        op= this->view.menuClient();
+        switch(op){
+            case 1:
+                runMenu();
+                break;
+            case 2:
+                if (clientOrderContainer.hasClientMadeOrders(loggedClient,ClientOrderContainer)){
+                    else{
+                        cout << "Client has not made any Orders.";
+                    }
+                    op= -1
+                    break;
+                    case 4:
+                        completeRegistration();
+                        break;
+                    default:
+                        break;
+                }
+        }while (op != 0);
+        logout();
+    }
+}
