@@ -95,15 +95,8 @@ void Controller:: runClient()::{
                         cout << "Client has not made any Orders.";
                     }
                     op= -1
-                    break;
-                    case 4:
-                        completeRegistration();
-                        break;
-                    default:
-                        break;
                 }
-        }while (op != 0);
-        logout();
+        }
     }
 }
 
@@ -115,9 +108,9 @@ void Controller::runMenus() {
     container<Menu> clientMenus = availableMenuContainer.getAll();
     container<Menu> allMenus = modelMenuContainerPointer->getAll();
     if(loggedUser->getEmail) == "manager"){
-        this->menuView.printMenuContainerManager(allMenus, "Menus List:");
+        this->menuView.printMenuContainerManager(allMenus, "Menus Container:");
     }else{
-        this->menuView.printMenuContainerClient(clientMenus, "Menus List:");
+        this->menuView.printMenuContainerClient(clientMenus, "Menus Container:");
     }
 
 }
