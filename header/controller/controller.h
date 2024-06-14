@@ -34,11 +34,12 @@ private:
     void runMenu();
     void runDono();
     void runViewAllClientsOrders();
-    void runManageMenus();
-    void runManageClients();
-    void runManageSuppliers();
+    void runDonoMenus();
+    void runDonoClients();
+    void runDonoSuppliers();
     void runToggleSupplierState();
     void runEditMenu();
+    void runViewOrdersFromClient();
 public:
     controller(SaboresIsep& saboresIsep);
     void run();
