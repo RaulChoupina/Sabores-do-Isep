@@ -221,7 +221,7 @@ void Controller::runViewAllClientsOrders(){
     this->clientOrderView.printAllClientOrders(modelClientOrderContainer);
 }
 
-void Controller::runViewOrdersFromClients() {
+void Controller::runViewOrdersFromClient() {
     string clientEmail;
     Client* client;
     ClientOrderContainer modelClientOrderContainer = this->model.getClientOrderContainer();
