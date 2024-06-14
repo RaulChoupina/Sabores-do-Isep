@@ -29,7 +29,6 @@ private:
     void runClients();
     void runMenus();
     void runClientOrders();
-    void runSuppliers();
     void runSupplierOrders();
     void runMenu();
     void runDono();
