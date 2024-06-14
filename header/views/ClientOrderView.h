@@ -16,7 +16,7 @@
       void printClientOrdersByClient(ClientOrderContainer& ClientOrders, Client& client);
       void printAllClientOrders (ClientOrderContainer& ClientOrders);
       void ViewAllClientsOrders ();
-      void ViewOrdersFromAClient();
+      void ViewOrdersFromClient();
       void OrderPlaced();
       void ThereAreNoOrders();
 

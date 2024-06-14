@@ -14,6 +14,7 @@ Menu MenuView::getMenu(const string& name){
      float SupplierPrice;
      int AmountInStock;
      string CategoryFood;
+     bool isAvailable;
 
      Name = Utils:: getString("Name");
      Description = Utils:: getString("Description");
@@ -21,8 +22,9 @@ Menu MenuView::getMenu(const string& name){
      AmountInStock = Utils:: getNumber("AmountInStock");
      SellingPrice = Utils:: getFloat("SellingPrice");
      SupplierPrice = Utils:: getFloat("SupplierPrice");
+     isAvailable = Utils::getBool("Is the product available? (1 - yes, 0 - no)? ");
 
-     Menu menu ( Name , Description , CategoryFood , AmountInStock , SupplierPrice , SellingPrice);
+     Menu menu ( Name , Description , CategoryFood , AmountInStock , SupplierPrice , SellingPrice , isAvailable);
      return Menu;
 }
 void MenuView::printMenuContainerClient (container < Menu >& menu, const string& containerTitle){
@@ -48,6 +50,7 @@ void MenuView::printMenuContainerDono (container < Menu >& menu, const string& c
      cout << setw(PRICESPACING)<< "Price";
      cout << setw(QUANTITYSPACING) << "Qty";
      cout << setw(PRICESPACING+7)<< "Supplier Price" ;
+     cout << setw(NAMESPACING)<< "Availability"
      cout << " Name";
 
      cout << endl;
@@ -56,6 +59,7 @@ void MenuView::printMenuContainerDono (container < Menu >& menu, const string& c
      cout << setw(PRICESPACING) << it->getSellingPrice();
      cout << setw(PRICESPACING+7) << it->getSupplierPrice();
      cout << setw(QUANTITYSPACING) << it->getAmountInStock();
+     cout << setw(NAMESPACING) << ((it->getIsAvailable()) ? "Available" : "Unavailable");
      cout << " " << it->getName() << endl;
      }
 }

@@ -18,6 +18,7 @@ private:
      container < Menu >:: iterator searchByName(string& name);
 public:
      container < Menu > getAll();
+     ProductContainer getAvailable();
      Menu* get(const string& name);
      void add (Menu obj);
      void edit(
@@ -26,7 +27,8 @@ public:
           const string& description,
           float supplierPrice,
           float sellingPrice,
-          int amountInStock);
+          int amountInStock,
+          bool isAvailable);
 void reset();
 }
 #endif //MENUCONTAINER_H
