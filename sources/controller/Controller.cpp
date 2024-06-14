@@ -107,7 +107,7 @@ void Controller::runMenus() {
     MenuContainer availableMenuContainer = modelMenuContainerPointer->getAvailable();
     container<Menu> clientMenus = availableMenuContainer.getAll();
     container<Menu> allMenus = modelMenuContainerPointer->getAll();
-    if(loggedUser->getEmail) == "manager"){
+    if(loggedUser->getEmail) == "dono"){
         this->menuView.printMenuContainerManager(allMenus, "Menus Container:");
     }else{
         this->menuView.printMenuContainerClient(clientMenus, "Menus Container:");
