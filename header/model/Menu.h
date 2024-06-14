@@ -33,7 +33,8 @@ class Menu{
     void setSupplierPrice(float supplierPrice);
     void setSellingPrice(float sellingPrice);
     void setAmountInStock(int amountInStock);
-    void setIsAvailable(bool IsAvailable);
+    void setAvailable();
+    void setUnavailable();
 
     Menu& get();
     const string& getName() const;
