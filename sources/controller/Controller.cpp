@@ -114,3 +114,84 @@ void Controller::runMenus() {
     }
 
 }
+void Controller::runDono() {
+    int val = -1;
+    do{
+        val = this->view.menuDono();
+        switch(val){
+            case 1:runDonoMenus();
+                break;
+            case 2:runDonoClients();
+                break;
+            case 3:runDonoSuppliers();
+                break;
+        }
+    }while(val != 0);
+}
+
+void Controller::runDonoMenus() {
+    MenuContainer& menuContainer = this->model.getMenuContainer();
+    container<Menu> menus = menuContainer.getAll();
+    this->menuView.printMenuContainerDono(menus, "Menus Container:");
+
+    int val = -1;
+    do{
+        val = this->view.menuDonoMenus();
+        switch(val){
+            case 1:runEditMenu();
+                this->menuView.printMenuContainerDono(menus, "Menus Container:");
+                menus = menuContainer.getAll();
+                break;
+            case 3:
+                runToggleMenuAvailability();
+                menus = menuContainer.getAll();
+                this->menuView.printMenuContainerDono(menus, "Menus Container:");
+                break;
+            default:
+                break;
+        }
+    }while(val != 0);
+}
+
+void Controller::runDonoSuppliers(){
+    SupplierContainer& supplierContainer = this->model.getSupplierContainer();
+    container <Supplier> suppliers = supplierContainer.getAll();
+    this->supplierView.printSuppliers(suppliers);
+
+    int val = -1;
+    do{
+        val = this->view.menuDonoSuppliers();
+        switch(val){
+            case 1:runToggleSupplierState();
+                suppliers = supplierContainer.getAll();
+                this->supplierView.printSuppliers(suppliers);
+                break;
+            case 2:runMenus();
+                suppliers = supplierContainer.getAll();
+                this->supplierView.printSuppliers(suppliers);
+                break;
+            case 3:runSupplierOrders();
+                break;
+        }
+    }while(val != 0);
+}
+
+void Controller::runDonoClients(){
+    ClientContainer& clientContainer = this->model.getClientContainer();
+    container<Client> clients = clientContainer.getAll();
+    this->clientView.printClientContainerDono(clients, "Clients Container:");
+
+    int val = -1;
+    do{
+        val = this->view.menuDonoClients();
+        switch(val){
+            case 1:
+                runViewAllClientsOrders();
+                break;
+            case 2:runViewOrdersFromClient();
+                break;
+            default:
+                break;
+        }
+    }while(val != 0);
+}

@@ -37,6 +37,7 @@ private:
     void runDonoClients();
     void runDonoSuppliers();
     void runToggleSupplierState();
+    void runToggleMenuAvailability();
     void runEditMenu();
     void runViewOrdersFromClient();
 public:
