@@ -16,6 +16,7 @@ class Menu{
         string categoryFood;
         string description;
         int amountInStock;
+        bool IsAvailable;
     public:
     Menu(
             const string& name
@@ -24,6 +25,7 @@ class Menu{
             float supplierPrice
             float sellingPrice
             int amountInStock
+            bool IsAvailable
             );
     void setMenuName(const string& name);
     void setCategoryFood(const string& categoryFood);
@@ -31,6 +33,8 @@ class Menu{
     void setSupplierPrice(float supplierPrice);
     void setSellingPrice(float sellingPrice);
     void setAmountInStock(int amountInStock);
+    void setAvailable();
+    void setUnavailable();
 
     Menu& get();
     const string& getName() const;
@@ -39,6 +43,7 @@ class Menu{
     float getSupplierPrice() const;
     float getSellingPrice() const;
     int getAmountInStock() const;
+    bool getIsAvailable() const;
 }
 
 #endif //MENU_H

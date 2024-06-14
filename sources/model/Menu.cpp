@@ -31,7 +31,14 @@ void Menu::setSellingPrice(float sellingPrice) {
 void Menu::setSupplierPrice(float supplierPrice) {
     this->supplierPrice = supplierPrice;
 }
-
+void Menu::set  Available()
+{
+    this->isAvailable = true;
+}
+void Menu::setUnavailable()
+{
+    this->isAvailable = false;
+}
 float Menu::getSellingPrice() const {
     return this->sellingPrice;
 }
@@ -49,6 +56,9 @@ const string &Menu::getCategoryFood() const {
 }
 int Menu::getAmountInStock() const {
     return this->stock;
+}
+bool Menu::getIsAvailable() const {
+    return this->isAvailable;
 }
 Menu &Menu::get(){
     return *this;
