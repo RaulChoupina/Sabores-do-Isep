@@ -59,7 +59,7 @@ void MenuView::printMenuContainerDono (container < Menu >& menu, const string& c
      cout << setw(PRICESPACING) << it->getSellingPrice();
      cout << setw(PRICESPACING+7) << it->getSupplierPrice();
      cout << setw(QUANTITYSPACING) << it->getAmountInStock();
-     cout << setw(NAMESPACING) << ((it->getIsAvailable()) ? "Available" : "Unavailable");
+     cout << setw(NAMESPACING) << ((it->getAvailable()) ? "Available" : "Unavailable");
      cout << " " << it->getName() << endl;
      }
 }
