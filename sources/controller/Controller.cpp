@@ -199,3 +199,15 @@ void Controller::runDonoClients(){
         }
     }while(val != 0);
 }
+
+void Controller::runSupplierOrders(){
+    SupplierOrderContainer modelSupplierOrderContainer = this->model.getSupplierOrderContainer();
+
+    if(this->model.getSupplierOrderContainer().getSize(modelSupplierOrderContainer) == 0){
+        this->supplierOrderView.thereAreNoOrders();
+        return;
+    }
+
+    this->supplierOrderView.printSupplierOrders(modelSupplierOrderContainer);
+}
+
