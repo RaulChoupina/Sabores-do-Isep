@@ -236,3 +236,14 @@ void Controller::runViewOrdersFromClients() {
     }
 }
 
+void Controller::runToggleSupplierState(){
+    SupplierContainer& supplierContainer = this->model.getSupplierContainer();
+    string name = this->supplierView.getSupplierName();
+    Supplier* supplier = supplierContainer.getByName(name);
+    if(supplier == nullptr){
+        this->supplierView.invalidSupplier();
+        return;
+    }else{
+        supplierContainer.toggleState(name);
+    }
+}
