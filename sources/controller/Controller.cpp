@@ -266,9 +266,9 @@ void Controller::runToggleMenuAvailability() {
 }
 
 void Controller::runEditMenu() {
-    MenuContainer& menucontainer = this->model.getMenuContainer();
+    MenuContainer& menuContainer = this->model.getMenuContainer();
     string name = this->menuView.getNAME();
-    if(menucontainer.get(name) == nullptr){
+    if(menuContainer.get(name) == nullptr){
         this->menuView.invalidNAME();
         return;
     }
