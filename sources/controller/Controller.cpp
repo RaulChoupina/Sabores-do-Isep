@@ -247,3 +247,9 @@ void Controller::runToggleSupplierState(){
         supplierContainer.toggleState(name);
     }
 }
+
+void Controller::runClientOrders() {
+    ClientOrderContainer tempClientOrderContainer = this->model.getClientOrderContainer();
+    this->clientOrderView.printClientOrdersByClient(tempClientOrderContainer, *(Client*)loggedUser);
+}
+
