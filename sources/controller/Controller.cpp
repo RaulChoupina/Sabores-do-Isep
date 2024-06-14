@@ -210,4 +210,29 @@ void Controller::runSupplierOrders(){
 
     this->supplierOrderView.printSupplierOrders(modelSupplierOrderContainer);
 }
+void Controller::runViewAllClientsOrders(){
+    ClientOrderContainer modelClientOrderContainer = this->model.getClientOrderContainer();
+
+    if(this->model.getClientOrderContainer().getSize(modelClientOrderContainer) == 0){
+        this->clientOrderView.thereAreNoOrders();
+        return;
+    }
+
+    this->clientOrderView.printAllClientOrders(modelClientOrderContainer);
+}
+
+void Controller::runViewOrdersFromClients() {
+    string clientEmail;
+    Client* client;
+    ClientOrderContainer modelClientOrderContainer = this->model.getClientOrderContainer();
+    if(loggedUser->getEmail() == this->model.getDono()->getEmail()){
+        clientEmail = Utils::getString("Insert the email of the client.");
+        client = this->model.getClientContainer().getByEmail(clientEmail);
+        if(client == nullptr){
+            this->clientView.clientNotFound();
+            return;
+        }
+        this->clientOrderView.printClientOrdersByClient(modelClientOrderContainer, *client);
+    }
+}
 
