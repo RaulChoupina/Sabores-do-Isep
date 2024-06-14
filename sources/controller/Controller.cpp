@@ -82,7 +82,7 @@ void Controller::runCreateAccount() {
 void Controller:: runClient()::{
     int op =-1;
     auto* loggedClient = (Client*)this-> loggedUser;
-    ClientOrderContainer& clientOrderConatiner = this-> model.getClientOrderContainer();
+    ClientOrderContainer& clientOrderContainer = this-> model.getClientOrderContainer();
     do{
         op= this->view.menuClient();
         switch(op){
@@ -105,4 +105,19 @@ void Controller:: runClient()::{
         }while (op != 0);
         logout();
     }
+}
+
+void Controller::runMenus() {
+    string name;
+    int val = -1;
+    MenuContainer* modelMenuContainerPointer = &this->model.getMenucontainer();
+    MenuContainer availableMenuContainer = modelMenuContainerPointer->getAvailable();
+    container<Menu> clientMenus = availableMenuContainer.getAll();
+    container<Menu> allMenus = modelMenuContainerPointer->getAll();
+    if(loggedUser->getEmail) == "manager"){
+        this->menuView.printMenuContainerManager(allMenus, "Menus List:");
+    }else{
+        this->menuView.printMenuContainerClient(clientMenus, "Menus List:");
+    }
+
 }
