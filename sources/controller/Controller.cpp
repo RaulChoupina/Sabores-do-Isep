@@ -264,3 +264,17 @@ void Controller::runToggleMenuAvailability() {
     MenuContainer* cartMenuContainer = this->cart.getMenuContainer();
     modelMenuContainer.toggleAvailability(menu, cartMenuContainer);
 }
+
+void Controller::runEditMenu() {
+    MenuContainer& menucontainer = this->model.getMenuContainer();
+    string name = this->menuView.getNAME();
+    if(menucontainer.get(name) == nullptr){
+        this->menuView.invalidNAME();
+        return;
+    }
+    Menu tempMenu = this->menuView.getMenu(name);
+    menuContainer.edit(tempMenu.getName(), tempMenu.getDescription(),
+                       tempMenu.getCategoryFood() , tempMenu.getAmountINStock(),
+                       tempMenu.getSupplierPrice(), tempMenu.getSellingPrice(),
+                       tempMenu.getIsAvailable());
+}
