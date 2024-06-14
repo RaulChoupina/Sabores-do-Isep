@@ -51,7 +51,23 @@ void MenuContainer::edit(const string &name, const string &description, const st
      it -> setMenuAmountInStock(amountInStock);
      it -> setMenuSupplierPrice(supplierPrice);
      it -> setMenuSellingPrice(sellingPrice);
+         if(isAvailable){
+             it->setAvailable();
+         }else{
+             it->setUnavailable();
+         }
      }
+}
+MenuContainer MenuContainer::getAvailable() {
+    MenuContainer returnMenuContainer;
+    auto it = this->menus.begin();
+    for (; it != this->menus.end(); ++it){
+        if(it->getIsAvailable() && it->getAmountINStock() > 0){
+            Menu tempMenu = it->get();
+            returnMenuContainer.add(tempMenu);
+        }
+    }
+    return returnMenuContainer;
 }
 void MenuContainer::reset() {
     this-> menus.clear();
