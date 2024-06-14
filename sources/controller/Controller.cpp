@@ -254,10 +254,10 @@ void Controller::runClientOrders() {
 }
 
 void Controller::runToggleMenuAvailability() {
-    string name = this->MenuView.getNAME();
+    string name = this->MenuView.getName();
     MenuContainer& modelMenuContainer = this->model.getMenuContainer();
     if(modelMenuContainer.get(name) == nullptr){
-        this->menuView.invalidNAME();
+        this->menuView.invalidName();
         return;
     }
     Menu* menu = modelMenuContainer.get(name);
