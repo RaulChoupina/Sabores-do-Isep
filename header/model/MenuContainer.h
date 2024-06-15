@@ -18,7 +18,7 @@ private:
      list < Menu >:: iterator searchByName(string& name);
 public:
      list < Menu > getAll();
-     ProductContainer getAvailable();
+     MenuContainer getAvailable();
      Menu* get(const string& name);
      void add (Menu obj);
      void edit(
