@@ -10,7 +10,7 @@
 #include "Menu.h"
 #include <container>
 
-using namesapce std;
+using namespace std;
 
 class Client;
 class ClientOrder;
@@ -25,7 +25,7 @@ public:
     container <ClientOrder> getAll();
     ClientOrderContainer getClientOrders();
     ClientOrderContainer getClientOrdersByClient(Client* pClient, ClientOrderContainer& containerClientOrderContainer);
-    bool DidClientMadeOrder(Client* pClient, ClinetOrderContainer& containerClientOrderContainer);
+    bool DidClientMadeOrder(Client* pClient, ClientOrderContainer& containerClientOrderContainer);
     void setClients(ClientContainer* clients);
     void setMenu(Menu* menus);
 

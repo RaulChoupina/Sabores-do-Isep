@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include "Client.h"
-#include "ClientContiner.h"
+#include "ClientContainer.h"
 
        class ClientView{
        public:
