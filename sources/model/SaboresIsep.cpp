@@ -10,13 +10,13 @@ SaboresIsep:: SaboresIsep(){
     setDataForConsistency();
 }
 SaboresIsep:: SaboresIsep(const string &email){
-     this-> email=email;
+     this-> email = email;
      setDataForConsintency();
 }
 string &Sabores::getEmail(){
     return email;
 }
-ClientContainer &SaboresIsep::getClientOrderConteiner(){
+ClientContainer &SaboresIsep::getClientOrderContainer(){
     return this->ClientOrders;
 }
 SupplierContainer &SaboresIsep::getSupplierContainer(){

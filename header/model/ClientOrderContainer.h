@@ -8,7 +8,7 @@
 #include "ClientOrder.h"
 #include "ClientContainer.h"
 #include "Menu.h"
-#include <container>
+#include <list>
 
 using namespace std;
 
@@ -16,16 +16,16 @@ class Client;
 class ClientOrder;
 class  ClientOrderContainer{
 private:
-    container < ClientOrder > clientOrders;
+    list < ClientOrder > clientOrders;
     ClientContainer*  clients;
     Menu* menus;
 public:
     ClientOrderContainer();
     int getSize(clientOrderContainer& clientOrderContainer);
-    container <ClientOrder> getAll();
+    list <ClientOrder> getAll();
     ClientOrderContainer getClientOrders();
-    ClientOrderContainer getClientOrdersByClient(Client* pClient, ClientOrderContainer& containerClientOrderContainer);
-    bool DidClientMadeOrder(Client* pClient, ClientOrderContainer& containerClientOrderContainer);
+    ClientOrderContainer getClientOrdersByClient(Client* pClient, ClientOrderContainer& listClientOrderContainer);
+    bool DidClientMadeOrder(Client* pClient, ClientOrderContainer& listClientOrderContainer);
     void setClients(ClientContainer* clients);
     void setMenu(Menu* menus);
 

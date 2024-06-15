@@ -10,7 +10,7 @@
 #include <sstream>
 #include "SaboresIsep"
 #include <algorithm>
-#include <cstring>
+#include <string>
 
 using namespace std;
 

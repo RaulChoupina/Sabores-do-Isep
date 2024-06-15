@@ -6,16 +6,16 @@
 #define CLIENTCONTAINER_H
 
 #include <iostream>
-#include <container>
+#include <list>
 #include "Client.h"
 #include <string>
 
 class ClientContainer{
 private:
-    container<Client> clients;
-    container<Client>::iterator searchByEmail(string& email);
+    list<Client> clients;
+    list<Client>::iterator searchByEmail(string& email);
 public:
-    container<Client> getAll();
+    list<Client> getAll();
     Client* getByEmail(string& email);
     void addClient(Client& client);
 

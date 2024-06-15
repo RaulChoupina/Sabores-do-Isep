@@ -13,8 +13,8 @@
       public:
       Menu getMenu (const string& name);
       void printMenuClient (Menu & menu);
-      void printMenuContainerClient (container < Menu >& menu, const string& containerTitle);
-      void printMenuContainerDono (container < Menu >& menu, const string& containerTitle);
+      void printMenuContainerClient (list < Menu >& menu, const string& listTitle);
+      void printMenuContainerDono (list < Menu >& menu, const string& listTitle);
       string getName();
       void MenuUnavailable();
       }

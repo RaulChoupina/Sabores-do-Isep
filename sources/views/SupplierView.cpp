@@ -7,7 +7,7 @@
 
 #define SUPPLIERCONTAINERPACING 10
 
-void SupplierView::printSuppliers(container<Supplier>& supplier){
+void SupplierView::printSuppliers(list <Supplier>& supplier){
       int P = SUPPLIERCONTAINERPACING;
 
       cout << "\nSuppliers Container:" << endl;

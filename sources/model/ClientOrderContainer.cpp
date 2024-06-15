@@ -29,8 +29,8 @@ ClientOrderContainer:: getClientOrdersByClient(Client *pClient,ClientOrderContai
     }
     return ClientOrderContainer;
 }
-Container<ClientContainer> ClientOrderContainer:: getALL(){
-    Container<ClientOrder> newClientOrderContainer (this->ClientOrder);
+list<ClientContainer> ClientOrderContainer:: getALL(){
+    list<ClientOrder> newClientOrderContainer (this->ClientOrder);
     return newClientOrderContainer;
 }
 bool ClientOrderContainer:: hasClientMadeOrders (client *pClient, CleintOrderContainer &modelClientOrderContainer){
@@ -44,7 +44,7 @@ bool ClientOrderContainer:: hasClientMadeOrders (client *pClient, CleintOrderCon
     return areThereOrders;
 }
 
-int clientOrderContainer::getSize(ClientOrderList &ClientOrderContainer){
+int clientOrderContainer::getSize(ClientOrderContainer &ClientOrderContainer){
     int i = 0;
     auto it = ClientOrderContainer.ClientOrders.begin();
     for(;it != ClientOrderContainer.ClientOrders.end();++it){

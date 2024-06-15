@@ -4,7 +4,7 @@
 #include <iosteam>
 #include "MenuContainer"
 
-container<Menu>::iterator MenuContainer::search(const string& name) {
+list<Menu>::iterator MenuContainer::search(const string& name) {
     auto it = this->menus.begin();
     for (; it != this->menus.end(); ++it){
         if((it->getName()) == name){
@@ -14,7 +14,7 @@ container<Menu>::iterator MenuContainer::search(const string& name) {
     return it;
 }
 
-container<Menu>::iterator MenuContainer::search(const Product &obj) {
+list<Menu>::iterator MenuContainer::search(const Product &obj) {
     auto it = this->menus.begin();
     for (; it != this->menus.end(); ++it){
         if((it->getName()) == obj.getName()){
@@ -22,8 +22,8 @@ container<Menu>::iterator MenuContainer::search(const Product &obj) {
         }
     }
     return it;}
-Container<Menu> MenuContainer::getAll() {
-    container<Menu> newMenuContainer (this->menus);
+list < Menu > MenuContainer::getAll() {
+    list<Menu> newMenuContainer (this->menus);
     return newMenuContainer;
 }
 Menu* MenuContainer::get(const string& name) {
@@ -43,7 +43,7 @@ void MenuContainer::add(const Menu obj) {
     }
 }
 void MenuContainer::edit(const string &name, const string &description, const string &categoryFood, int amountInStock, float supplierPrice, float sellingPrice){
-     container < Menu >::iterator it = search(name);
+     list < Menu >::iterator it = search(name);
      if(it !=this ->menus.end()){
      it -> setMenuName(name);
      it -> setMenuCategoryFood(categoryFood);

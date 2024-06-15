@@ -19,7 +19,7 @@ void Order:: add(Menu &menu){
 }
 void Order:: updatedSellingPriceClient(){
     float tempSellingPrice = 0;
-    Container<Menu> tempMenu = this ->Menu.getAll();
+    list <Menu> tempMenu = this ->Menu.getAll();
     auto it = tempMenu.begin();
     sellingPrice = tempSellingPrice;
 }

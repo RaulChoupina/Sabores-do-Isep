@@ -13,7 +13,7 @@ void ClientOrderView::printClientOrdersByClient(ClientOrderContainer &clientOrde
     cout << setw(PRICESPACING) << "Price" << endl;
 
     Client* clientPtr = &client;
-    container<ClientOrder> tempClientOrders = clientOrders.getClientOrdersByClient(clientPtr, clientOrders).getAll();
+    list<ClientOrder> tempClientOrders = clientOrders.getClientOrdersByClient(clientPtr, clientOrders).getAll();
     auto it = tempClientOrders.begin();
     for (int i = 1; it != tempClientOrders.end(); ++it, ++i){
         cout << setw(PRICESPACING) << it->getPrice() << endl;

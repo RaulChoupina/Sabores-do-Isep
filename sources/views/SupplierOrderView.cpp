@@ -38,7 +38,7 @@ void SupplierOrderView:: printSupplierOrdersBySupplier(SupplierOrderConstainer& 
     cout << setw(PRICESPACING) << "Value" << endl;
 
     Supplier* supplierPtr = &supplier;
-    container<SupplierOrder> tempSupplierOrders = supplierOrders.getSupplierOrdersBySupplier(supplierPtr, supplierOrders).getAll();
+    list <SupplierOrder> tempSupplierOrders = supplierOrders.getSupplierOrdersBySupplier(supplierPtr, supplierOrders).getAll();
     auto it = tempSupplierOrders.begin();
     for (int i = 1; it != tempSupplierOrders.end(); ++it, ++i){
         cout << setw(PRICESPACING) << it->getValue() << endl;

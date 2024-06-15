@@ -27,8 +27,8 @@ Menu MenuView::getMenu(const string& name){
      Menu menu ( Name , Description , CategoryFood , AmountInStock , SupplierPrice , SellingPrice , isAvailable);
      return Menu;
 }
-void MenuView::printMenuContainerClient (container < Menu >& menu, const string& containerTitle){
-     cout << containerTitle << endl;
+void MenuView::printMenuContainerClient (list < Menu >& menu, const string& listTitle){
+     cout << listTitle << endl;
      cout << setw(PRICESPACING) << "Price";
      cout << "Name";
 
@@ -45,8 +45,8 @@ void MenuView::printMenuClient (Menu & menu){
      cout << "AmountInStock : " << menu->getAmountInStock() << endl;
      cout << "CategoryFood  : " << menu->getCategoryFood() << endl;
 }
-void MenuView::printMenuContainerDono (container < Menu >& menu, const string& containerTitle){
-     cout << containerTitle << endl;
+void MenuView::printMenuContainerDono (list < Menu >& menu, const string& listTitle){
+     cout << listTitle << endl;
      cout << setw(PRICESPACING)<< "Price";
      cout << setw(QUANTITYSPACING) << "Qty";
      cout << setw(PRICESPACING+7)<< "Supplier Price" ;

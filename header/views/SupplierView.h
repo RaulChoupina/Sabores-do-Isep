@@ -13,7 +13,7 @@
        public:
        string getSupplierName();
        void printSupplier (Supplier* supplier);
-       void printSupplier (container<Supplier>& supplier);
+       void printSupplier (list<Supplier>& supplier);
        void InvalidSupplier();
        void OrderPlaced();
 }

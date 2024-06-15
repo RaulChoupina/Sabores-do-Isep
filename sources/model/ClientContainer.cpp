@@ -14,7 +14,7 @@ Container <Client> :: iterator ClientContainer:: searchByEmail(string &Email){
     return it;
 }
 Container<Client> ClientContainer:: getAll(){
-    Constainer<Client> newClientContainer(this->clients);
+    list<Client> newClientContainer(this->clients);
     return newClientContainer;
 }
 Client* ClientContainer::getByEmail(string &Email){
