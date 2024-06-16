@@ -1,7 +1,7 @@
 #include <iostream>
 #include "SaboresIsep.h"
 #include "mock/MockData.h"
-#include "Controller.h"
+#include "controller.h"
 
 using namespace std;
 
