@@ -18,5 +18,5 @@ using namespace std;
       static int getNumber (const string& label);
       bool validatePassword (const string& password);
       bool validateEmail (const string& email);
-}
+};
 #endif //UTILS_H

@@ -19,5 +19,5 @@
         void printAllSupplierOrders(SupplierOrderContainer& supplierOrders);
         void OrderPlaced();
         void ThereAreNoOrders();
-}
+};
 #endif //SUPPLIERORDERVIEW_H

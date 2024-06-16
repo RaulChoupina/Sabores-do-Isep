@@ -26,5 +26,5 @@ public:
       void setSuppliers(SupplierContainer& pSuppliers);
       list < SupplierOrder > getAll();
       SupplierOrderContainer getSupplierOrdersBySupplier(Supplier* pSupplier, SupplierOrderContainer& modelSupplierOrderContainer);
-}
+};
 #endif //SUPPLIERORDERCONTAINER_H

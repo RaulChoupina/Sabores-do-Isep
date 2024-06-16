@@ -16,6 +16,6 @@
        void printSupplier (list<Supplier>& supplier);
        void InvalidSupplier();
        void OrderPlaced();
-}
+};
 
 #endif //SABORES_DO_ISEP_SUPPLIERVIEW_H

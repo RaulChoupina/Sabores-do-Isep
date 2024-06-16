@@ -8,8 +8,15 @@ CMake Deprecation Warning:
   use the cmake-file-api(7) to view CMake-generated project build trees.
 
 
--- Configuring done (0.0s)
-CMake Error: Cannot determine link language for target "new_target".
-CMake Error: CMake can not determine linker language for target: new_target
--- Generating done (0.0s)
+-- Configuring done (0.1s)
+CMake Error at CMakeLists.txt:104 (add_executable):
+  Cannot find source file:
+
+    controller.cpp
+
+
+CMake Error at CMakeLists.txt:104 (add_executable):
+  No SOURCES given to target: main.cpp
+
+
 CMake Generate step failed.  Build files cannot be regenerated correctly.

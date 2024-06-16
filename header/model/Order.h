@@ -21,6 +21,6 @@ public:
        void updateSellingPriceClient();
        void updateSellingPriceDonoContainer();
 
-}
+};
 
 #endif //ORDER_H

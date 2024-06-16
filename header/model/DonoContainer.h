@@ -19,6 +19,6 @@
 
 public:
     void set (string& pEmail , string& pPassword);
-}
+};
 
 #endif //DONOCONTAINER_H

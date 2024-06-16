@@ -44,6 +44,6 @@ class Menu{
     float getSellingPrice() const;
     int getAmountInStock() const;
     bool getIsAvailable() const;
-}
+};
 
 #endif //MENU_H

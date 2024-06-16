@@ -36,6 +36,6 @@ public:
        bool operator == (const Client& obj) const;
        bool operator == (string& email) const;
 
-}
+};
 
 #endif //CLIENT_H

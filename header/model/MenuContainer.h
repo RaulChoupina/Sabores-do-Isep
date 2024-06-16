@@ -30,5 +30,5 @@ public:
           int amountInStock,
           bool isAvailable);
 void reset();
-}
+};
 #endif //MENUCONTAINER_H

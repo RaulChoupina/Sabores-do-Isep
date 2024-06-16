@@ -20,5 +20,5 @@ public:
     ClientOrder(int nOrder, string OrderDetails , CLient* client);
     void setClient(Client* pClient);
     Client* getClient();
-}
+};
 #endif //CLIENTORDER_H

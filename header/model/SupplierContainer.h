@@ -18,5 +18,5 @@ public:
     list<Supplier> getAll();
     void addSupplier(const Supplier& supplier);
     void toggleState(string& name);
-}
+};
 #endif //SUPPLIERCONTAINER_H

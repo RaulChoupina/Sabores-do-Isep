@@ -92,6 +92,24 @@ set(VIEWS_SOURCE_FILES
         ${PROJECT_VIEWS_HEADER_DIR}/View.h
         ${PROJECT_VIEWS_SOURCES_DIR}/View.cpp
 )
+
+set(SOURCE_FILES
+        main.cpp
+        controller/Controller.h
+        controller/Controller.cpp
+        mock/MockData.h
+        mock/MockData.cpp)
+
+
+add_executable(
+        main.cpp
+        controller.cpp
+        ${SOURCE_FILES}
+        ${MODEL_SOURCE_FILES}
+        ${VIEWS_SOURCE_FILES}
+        ${EXCEPTION_SOURCE_FILES}
+)
+
 set(CMAKE_INCLUDE_DIRS
         ${PROJECT_SOURCE_DIR}/include
         ${PROJECT_SOURCE_DIR}/external/include)
@@ -100,4 +118,6 @@ include_directories(
         ${PROJECT_SOURCE_DIR}/external)
 include_directories(
         ${PROJECT_SOURCE_DIR}/../../header)
+include_directories(${PROJECT_SOURCE_DIR}/custom/header)
+include_directories(${PROJECT_SOURCE_DIR}/header)
 

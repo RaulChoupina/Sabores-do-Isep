@@ -21,5 +21,5 @@
        void printClientContainerDono(list<Client>& clients, const string& listTitle);
        void ClientNotFound ();
 
-}
+};
 #endif //SABORES_DO_ISEP_CLIENTVIEW_H

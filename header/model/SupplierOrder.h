@@ -20,6 +20,6 @@ public:
     Supplier* getSupplier();
 
     SupplierOrder &get();
-}
+};
 
 #endif //SUPPLIERORDER_H

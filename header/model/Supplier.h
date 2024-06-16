@@ -21,6 +21,6 @@ public:
       bool operator == (const Supplier& obj) const;
       bool operator == (string& name) const;
 
-}
+};
 
 #endif //SUPPLIER_H

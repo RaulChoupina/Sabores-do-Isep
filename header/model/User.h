@@ -30,7 +30,7 @@ public:
      void getPassword();
      void getName();
 
-}
+};
 
 
 #endif //USER_H
