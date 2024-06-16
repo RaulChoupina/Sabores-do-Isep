@@ -15,14 +15,14 @@ Client :: Client(string &pEmail,string &pPassword) : User(pEmail, pPassword){
 
 void Client :: setActive(){
     if(isActive == 1){
-        cout<< "client already active"<<endl;
+        cout << "client already active" << endl;
         return;
     }
     this ->isActive = true;
 }
 void Client:: setInactive(){
-    if(isActice == 0){
-        cout<<"client already inactive"<<endl;
+    if(isActive == 0){
+        cout << "client already inactive" << endl;
         return;
     }
     this->isActive = false
@@ -54,6 +54,6 @@ Client :: Client(string &Email,string &password, unsigned int nif): User (Email,
 string Client :: getPassword()const{
     return password;
 }
-Cleint &client::get(){
+Client &client::get(){
     return *this;
 }

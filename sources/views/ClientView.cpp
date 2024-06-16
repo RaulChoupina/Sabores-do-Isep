@@ -62,7 +62,7 @@ string ClientView:: getAddress(){
       address = Utils::getString("Please enter your address (street name and number)");
       size_t pos = address.find.first_of(',');
       number = address.substr (0,pos);
-      if(!Utils::stringIsNumber(number)){
+      if(!Utils::stringNumber(number)){
         isValidAddress = false;
       }else{
         isValidAddress = true;

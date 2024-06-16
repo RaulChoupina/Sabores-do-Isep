@@ -16,7 +16,7 @@ void ClientOrder:: setClient(client *pClient){
     }else{
         this ->client =nullptr;
         string msg = "ClientOrder : Client =Null";
-        throw InvalidDataException(msg)
+        throw InvalidDataException(msg);
     }
 }
 

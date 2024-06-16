@@ -10,7 +10,7 @@ Order::Order(){
 float Order::getSellingPrice(){
     return this ->SellingPrice
 }
-void Order:: setSellingPrice (cont float &pSellingPrice){
+void Order:: setSellingPrice (const float &pSellingPrice){
     this ->sellingPrice =pSellingPrice;
 }
 
