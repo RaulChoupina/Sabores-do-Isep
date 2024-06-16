@@ -6,8 +6,10 @@
 #define SABORES_DO_ISEP_SUPPLIERVIEW_H
 
 #include <iostream>
+#include <string>
 #include "Supplier.h"
 #include "SupplierContainer.h"
+using namespace std;
 
        class SupplierView{
        public:

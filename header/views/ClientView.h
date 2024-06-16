@@ -6,9 +6,10 @@
 #define SABORES_DO_ISEP_CLIENTVIEW_H
 
 #include <iostream>
+#include <string>
 #include "Client.h"
 #include "ClientContainer.h"
-
+using namespace std;
        class ClientView{
        public:
        string getEmail();

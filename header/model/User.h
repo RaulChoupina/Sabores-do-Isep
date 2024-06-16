@@ -23,7 +23,7 @@ private:
      void setEmail (string& pEmail);
 
 public:
-     virtualstring getEmail() const;
+     virtual string getEmail() const;
      void setName (string pName);
      void setPassword (string& pPassword);
 
