@@ -71,3 +71,4 @@ bool Utils::validatePassword(const string& password) {
 bool Utils::validateEmail(const string& email) {
     const regex pattern(R"((\w+)(\.?[\w-]+)*@([\w-]+\.)+[\w-]{2,})");
     return regex_match(email, pattern);
+}
