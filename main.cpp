@@ -12,7 +12,7 @@ int main() {
     MockData mock;
     mock.generateData(saboresIsep);
 
-    Controller controller(saboresIsep);
+    Controller  controller(saboresIsep);
     controller.run();
     cout << "Application has exited" << endl;
     return 0;
