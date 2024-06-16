@@ -72,7 +72,7 @@ int View::menuClient(){
     }while(val < 0 || val > 2);
     return val;
 }
-int View::menuMenu(){
+int View::menuDonoMenu(){
     int val = -1;
     do{
         cout << "\n  -----------------------\n";
@@ -104,7 +104,7 @@ int View::menuClient(){
     }while(val < 0 || val > 3);
     return val;
 }
-int View::menuMenu(){
+int View::menuClientMenu(){
     int val = -1;
     do{
         cout << "\n  -----------------------\n";
