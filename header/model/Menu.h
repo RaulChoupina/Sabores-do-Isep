@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <string>
-
+using namespace std;
 class Menu{
     private:
         string name;
@@ -18,15 +18,15 @@ class Menu{
         int amountInStock;
         bool IsAvailable;
     public:
-    Menu(
-            const string& name
-            const string& categoryFood
-            const string& description
-            float supplierPrice
-            float sellingPrice
-            int amountInStock
-            bool IsAvailable
-            );
+    Menu(const string &name,
+         const string &categoryFood,
+         const string &description,
+         float supplierPrice,
+         float sellingPrice,
+         int amountInStock,
+         bool IsAvailable);
+
+
     void setMenuName(const string& name);
     void setCategoryFood(const string& categoryFood);
     void setDescription(const string& description);

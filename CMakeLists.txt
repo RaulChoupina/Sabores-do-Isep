@@ -98,7 +98,8 @@ set(SOURCE_FILES
         controller/Controller.h
         controller/Controller.cpp
         mock/MockData.h
-        mock/MockData.cpp)
+        mock/MockData.cpp
+        header/model/ClientOrder.h)
 
 
 add_executable(

@@ -9,13 +9,13 @@ CMake Deprecation Warning:
 
 
 -- Configuring done (0.1s)
-CMake Error at CMakeLists.txt:104 (add_executable):
+CMake Error at CMakeLists.txt:105 (add_executable):
   Cannot find source file:
 
     controller.cpp
 
 
-CMake Error at CMakeLists.txt:104 (add_executable):
+CMake Error at CMakeLists.txt:105 (add_executable):
   No SOURCES given to target: main.cpp
 
 

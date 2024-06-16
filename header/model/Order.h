@@ -6,7 +6,7 @@
 #define ORDER_H
 
 #include <iostream>
-#include "MenuContainer"
+#include "MenuContainer.h"
 
 class order {
 private:
@@ -15,7 +15,7 @@ private:
        void setSellingPrice (const float& pSellingPrice);
 
 public:
-       Order();
+       order();
        float getSellingPrice();
        void add (Menu& menu);
        void updateSellingPriceClient();
