@@ -21,8 +21,9 @@ using namespace std;
      int menuMain();
      int menuDono();
      int menuClient();
-     int menuMenu();
+     int menuDonoMenu();
      int menuSuppliers();
+     int menuClientMenu();
 }
 
 #endif //VIEW_H
