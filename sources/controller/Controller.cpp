@@ -109,8 +109,8 @@ void Controller::runMenus() {
     int val = -1;
     MenuContainer* modelMenuContainerPointer = &this->model.getMenucontainer();
     MenuContainer availableMenuContainer = modelMenuContainerPointer->getAvailable();
-    container<Menu> clientMenus = availableMenuContainer.getAll();
-    container<Menu> allMenus = modelMenuContainerPointer->getAll();
+    list<Menu> clientMenus = availableMenuContainer.getAll();
+    list<Menu> allMenus = modelMenuContainerPointer->getAll();
     if(loggedUser->getEmail) == "dono"){
         this->menuView.printMenuContainerManager(allMenus, "Menus Container:");
     }else{
@@ -135,7 +135,7 @@ void Controller::runDono() {
 
 void Controller::runDonoMenus() {
     MenuContainer& menuContainer = this->model.getMenuContainer();
-    container<Menu> menus = menuContainer.getAll();
+    list<Menu> menus = menuContainer.getAll();
     this->menuView.printMenuContainerDono(menus, "Menus Container:");
 
     int val = -1;
@@ -159,7 +159,7 @@ void Controller::runDonoMenus() {
 
 void Controller::runDonoSuppliers(){
     SupplierContainer& supplierContainer = this->model.getSupplierContainer();
-    container <Supplier> suppliers = supplierContainer.getAll();
+    list <Supplier> suppliers = supplierContainer.getAll();
     this->supplierView.printSuppliers(suppliers);
 
     int val = -1;
@@ -182,7 +182,7 @@ void Controller::runDonoSuppliers(){
 
 void Controller::runDonoClients(){
     ClientContainer& clientContainer = this->model.getClientContainer();
-    container<Client> clients = clientContainer.getAll();
+    list<Client> clients = clientContainer.getAll();
     this->clientView.printClientContainerDono(clients, "Clients Container:");
 
     int val = -1;

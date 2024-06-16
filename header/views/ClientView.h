@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include "Client.h"
-#include "ClientContiner.h"
+#include "ClientContainer.h"
 
        class ClientView{
        public:
@@ -18,7 +18,7 @@
        unsigned int getNif();
        void invalidEmail();
        void incorrectPassword();
-       void printClientContainerDono(container<Client>& clients, const string& containerTitle);
+       void printClientContainerDono(list<Client>& clients, const string& listTitle);
        void ClientNotFound ();
 
 }

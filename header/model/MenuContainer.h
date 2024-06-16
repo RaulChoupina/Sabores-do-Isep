@@ -7,18 +7,18 @@
 
 #include <iostream>
 #include "DuplicatedEntryException.h"
-#include <container>
+#include <list>
 #include "Menu.h"
 
 class MenuContainer{
 private:
-     container < Menu > menus;
-     container < Menu >:: iterator search(const string& name);
-     container < Menu >:: iterator search(const Menu& obj);
-     container < Menu >:: iterator searchByName(string& name);
+     list < Menu > menus;
+     list < Menu >:: iterator search(const string& name);
+     list < Menu >:: iterator search(const Menu& obj);
+     list < Menu >:: iterator searchByName(string& name);
 public:
-     container < Menu > getAll();
-     ProductContainer getAvailable();
+     list < Menu > getAll();
+     MenuContainer getAvailable();
      Menu* get(const string& name);
      void add (Menu obj);
      void edit(

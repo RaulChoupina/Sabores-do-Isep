@@ -4,11 +4,11 @@
 #include <iostream>
 #include "SupplierContainer.h"
 
-Container<Supplier> SupplierContainer:getAll() {
-    Container <Supplier> SupplierContainer(this->suppliers);
+list<Supplier> SupplierContainer:getAll() {
+    list <Supplier> SupplierContainer(this->suppliers);
     return newSupplierContainer;
 }
-Container<Supplier>:: iterator SupplierContainer::searchByName (string &Name) {
+list<Supplier>:: iterator SupplierContainer::searchByName (string &Name) {
     auto it = this->suppliers.begin();
     for (; it != this->suppliers.end(); ++i) {
         if ((*it) == Name) {

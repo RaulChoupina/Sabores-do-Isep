@@ -14,7 +14,7 @@ using namespace std;
 
 class SupplierOrderContainer{
 private:
-      container < SupplierOrder > supplierOrders;
+      list < SupplierOrder > supplierOrders;
       SupplierContainer* suppliers;
       MenuContainer* menus;
 public:
@@ -24,7 +24,7 @@ public:
       void add(const SupplierOrder& pSupplierOrder);
       void setMenus(MenuContainer& pMenus);
       void setSuppliers(SupplierContainer& pSuppliers);
-      container < SupplierOrder > getAll();
+      list < SupplierOrder > getAll();
       SupplierOrderContainer getSupplierOrdersBySupplier(Supplier* pSupplier, SupplierOrderContainer& modelSupplierOrderContainer);
 }
 #endif //SUPPLIERORDERCONTAINER_H

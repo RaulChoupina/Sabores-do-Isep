@@ -21,8 +21,8 @@ string ClientView :: invalidEmail(){
 string ClientView :: incorrectPassword(){
     cout << "Incorrect Password";
 }
-void printClientContainerDono(container<Client>& clients, const string& containerTitle){
-    cout << containerTitle << endl;
+void printClientContainerDono(list<Client>& clients, const string& listTitle){
+    cout << listTitle << endl;
     cout << left << setw(NAMESPACING) << "Name";
     cout << left << setw(EMAILPACING) << "Email";
     cout << left << setw(ADDRESSSPACING) << "Address";
@@ -30,7 +30,7 @@ void printClientContainerDono(container<Client>& clients, const string& containe
     cout << endl;
 
     for (Client client : clients]{
-    cout << containerTitle << endl;
+    cout << listTitle << endl;
     cout << left << setw(NAMESPACING) << client.getName();
     cout << left << setw(EMAILPACING) <<  client.getEmail();
     cout << left << setw(ADDRESSSPACING) <<  client.getAddress();
