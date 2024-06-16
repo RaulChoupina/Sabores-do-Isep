@@ -9,6 +9,8 @@ Menu::menu(const string &name,
            int amountInStock,
            float supplierPrice,
            float sellingPrice);
+           : name(name), description(description), categoryFood(categoryFood),
+      amountInStock(amountInStock), supplierPrice(supplierPrice), sellingPrice(sellingPrice) {}
 
 void Menu::setMenuName(const string &name) {
     this->name = name;

@@ -6,42 +6,44 @@
 #include "SupplierOrderView.h"
 #include "Utils.h"
 
-string SupplierOrderView:: getName(){
+using namespace std;
+
+string SupplierOrderView:: getSupplierName(){
     return Utils::getString("Insert Supplier Name");
 }
-string SupplierOrderView:: getName(){
+string SupplierOrderView:: getMenuName(){
     return Utils::getString("Insert Menu Name");
 }
 string SupplierOrderView:: getAmountInStock(){
     return "0";
 }
 string SupplierOrderView:: OrderPlaced(){
-   cout << "Order Placed";
+   cout << "Order Placed" << endl;
 }
 void SupplierOrderView::printAllSupplierOrders(SupplierOrderContainer& supplierOrders){
      cout << "Suppliers Orders" << endl;
      cout << setw(NAMESPACING) << "Name";
-     cout << setw(PRICESPACING) << "Price" << endl;
+     cout << setw(PRICESPACING) << "SellingPrice" << endl;
 
-     container < SupplierOrder > tempSupplierOrders = SupplierOrders.getAll();
+     list < SupplierOrder > tempSupplierOrders = SupplierOrders.getAll();
      auto it = tempSupplierOrders.begin();
      for (int i = 1; it != tempSupplierOrders.end(); ++it, ++i){
          cout << setw(NAMESPACING) << it-> getSupplier()-> getName();
-         cout << setw(PRICESPACING) << it-> getPrice() << endl;
+         cout << setw(PRICESPACING) << it-> getSellingPrice() << endl;
      }
 }
 void SupplierOrderView:: ThereAreNoOrders(){
-     cout << "There are no orders";
+     cout << "There are no orders" << endl;
 }
 void SupplierOrderView:: printSupplierOrdersBySupplier(SupplierOrderConstainer& supplierOrders, Supplier& supplier){
     cout << "Orders placed by " << supplier.getName() << endl;
-    cout << setw(PRICESPACING) << "Value" << endl;
+    cout << setw(PRICESPACING) << "SellingPrice" << endl;
 
     Supplier* supplierPtr = &supplier;
     list <SupplierOrder> tempSupplierOrders = supplierOrders.getSupplierOrdersBySupplier(supplierPtr, supplierOrders).getAll();
     auto it = tempSupplierOrders.begin();
     for (int i = 1; it != tempSupplierOrders.end(); ++it, ++i){
-        cout << setw(PRICESPACING) << it->getValue() << endl;
+        cout << setw(PRICESPACING) << it->getSellingPrice() << endl;
     }
 }
 

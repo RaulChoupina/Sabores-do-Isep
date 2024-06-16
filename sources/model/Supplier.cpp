@@ -5,7 +5,7 @@
 #include "Supplier.h"
 
 Supplier:: Supplier (string& Name,bool isActive){
-    setName(email);
+    setName(Name);
     if(isActive){
         setActive();
     }else{

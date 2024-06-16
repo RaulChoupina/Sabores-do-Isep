@@ -1,7 +1,7 @@
 //
 // Created by HP on 27/05/2024.
 //
-#include <ioastream>
+#include <iostream>
 #include "Utils.h"
 #include "Controller.h"
 #include "InvalidDataException.h"

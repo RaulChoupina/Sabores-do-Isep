@@ -20,7 +20,7 @@ ClientContainer &SaboresIsep::getClientOrderContainer(){
     return this->ClientOrders;
 }
 SupplierContainer &SaboresIsep::getSupplierContainer(){
-    return this-> clientOrders;
+    return this-> suppliers;
 }
 SupplierOrderContainer &SaboresIsep::getSupplierOrderContainer(){
     return this->suppliersOrders;

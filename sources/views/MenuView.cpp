@@ -29,7 +29,7 @@ Menu MenuView::getMenu(const string& name){
 }
 void MenuView::printMenuContainerClient (list < Menu >& menu, const string& listTitle){
      cout << listTitle << endl;
-     cout << setw(PRICESPACING) << "Price";
+     cout << setw(PRICESPACING) << "SellingPrice";
      cout << "Name";
 
      cout << endl;
@@ -69,7 +69,7 @@ string MenuView:: getName(){
      do{
          name = Utils::getString("Insert Menu Name");
          flag = false;
-         if(!Utils::stringAmountInStock(Name){
+         if(!Utils::stringAmountInStock(name){
              flag = true;
              MenuUnavailable();
          }

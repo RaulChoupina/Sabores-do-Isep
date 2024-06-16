@@ -13,7 +13,8 @@
         class SupplierOrder{
         public:
         SupplierOrder getSupplierOrder();
-        string getName();
+        string getSupplierName();
+        string getMenuName();
         string getAmountInStock();
         void printSupplierOrdersBySupplier(SupplierOrderConstainer& supplierOrders, Supplier& supplier);
         void printAllSupplierOrders(SupplierOrderContainer& supplierOrders);

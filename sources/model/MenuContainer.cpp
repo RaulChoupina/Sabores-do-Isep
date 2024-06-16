@@ -14,7 +14,7 @@ list<Menu>::iterator MenuContainer::search(const string& name) {
     return it;
 }
 
-list<Menu>::iterator MenuContainer::search(const Product &obj) {
+list<Menu>::iterator MenuContainer::search(const Menu &obj) {
     auto it = this->menus.begin();
     for (; it != this->menus.end(); ++it){
         if((it->getName()) == obj.getName()){
