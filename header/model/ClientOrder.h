@@ -10,14 +10,14 @@
 #include "Client.h"
 #include <string>
 
-class ClientOrder : public Order {
+class ClientOrder : public order {
 private:
 int nOrder;
 string OrderDetails;
 Client* client{};
 public:
-    ClientOrder()= default
-    ClientOrder(int nOrder, string OrderDetails , CLient* client);
+    ClientOrder()= default;
+    ClientOrder(int nOrder, string OrderDetails , Client* client);
     void setClient(Client* pClient);
     Client* getClient();
 };
