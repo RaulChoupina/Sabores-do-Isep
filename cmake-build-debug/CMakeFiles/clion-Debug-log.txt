@@ -8,8 +8,8 @@ CMake Deprecation Warning:
   use the cmake-file-api(7) to view CMake-generated project build trees.
 
 
-CMake Error at CMakeLists.txt:117 (add_subdirectory):
-  add_subdirectory called with incorrect number of arguments
-
-
--- Configuring incomplete, errors occurred!
+-- Configuring done (0.0s)
+CMake Error: Cannot determine link language for target "new_target".
+CMake Error: CMake can not determine linker language for target: new_target
+-- Generating done (0.0s)
+CMake Generate step failed.  Build files cannot be regenerated correctly.
