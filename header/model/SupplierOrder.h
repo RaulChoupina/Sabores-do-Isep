@@ -10,9 +10,9 @@
 #include "Menu.h"
 #include "Supplier.h"
 
-class SupplierOrder :public Order{
+class SupplierOrder :public order{
 private:
-    supplier* supplier{};
+    Supplier* supplier{};
 public:
     SupplierOrder() = default;
     SupplierOrder(Supplier* pSupplier, float SupplierPrice);

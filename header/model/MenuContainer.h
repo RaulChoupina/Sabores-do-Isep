@@ -6,7 +6,7 @@
 #define MENUCONTAINER_H
 
 #include <iostream>
-#include "DuplicatedEntryException.h"
+#include "DuplicatedDataException.h"
 #include <list>
 #include "Menu.h"
 
