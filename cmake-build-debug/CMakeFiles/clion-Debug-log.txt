@@ -8,7 +8,7 @@ CMake Deprecation Warning:
   use the cmake-file-api(7) to view CMake-generated project build trees.
 
 
-CMake Error at CMakeLists.txt:113 (add_subdirectory):
+CMake Error at CMakeLists.txt:117 (add_subdirectory):
   add_subdirectory called with incorrect number of arguments
 
 

@@ -29,6 +29,7 @@ set(EXCEPTION_SOURCE_FILES
         ${PROJECT_EXCEPTION_HEADERS_DIR}/InvalidDataException.h
         ${PROJECT_EXCEPTION_SOURCES_DIR}/InvalidDataException.cpp
         header/model/SaboresIsep.h
+        header/model/SaboresIsep.h
 )
 
 set(PROJECT_MODEL_DIR
@@ -70,6 +71,7 @@ set(MODEL_SOURCE_FILES
         ${PROJECT_MODEL_HEADERS_DIR}/User.h
         ${PROJECT_MODEL_SOURCES_DIR}/User.cpp
         header/model/SaboresIsep.h
+        header/model/SaboresIsep.h
 )
 
 set(PROJECT_VIEWS_DIR
@@ -97,6 +99,7 @@ set(VIEWS_SOURCE_FILES
         ${PROJECT_VIEWS_HEADERS_DIR}/View.h
         ${PROJECT_VIEWS_SOURCES_DIR}/View.cpp
         header/model/SaboresIsep.h
+        header/model/SaboresIsep.h
 )
 
 
@@ -105,6 +108,7 @@ set(SOURCE_FILES
         controller/Controller.cpp
         mock/MockData.h
         mock/MockData.cpp
+        header/model/SaboresIsep.h
         header/model/SaboresIsep.h)
 
 set(GOOGLE_TEST_LIB ${PROJECT_SOURCE_DIR}/googleTestLib/googletest-main)
@@ -127,6 +131,8 @@ add_executable(
         header/controller/controller.h
         header/model/ClientOrderContainer.h
         sources/controller/Controller.cpp
+        header/model/SaboresIsep.h
+        header/model/SaboresIsep.h
 )
 
 add_executable(SaboresIsepTests
@@ -135,6 +141,7 @@ add_executable(SaboresIsepTests
         ${MODEL_SOURCE_FILES}
         ${VIEWS_SOURCE_FILES}
         ${EXCEPTION_SOURCE_FILES}
+        header/model/SaboresIsep.h
 )
 target_link_libraries(SaboresIsepTests gtest gtest_main)
 
