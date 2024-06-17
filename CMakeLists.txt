@@ -11,22 +11,22 @@ set(CONTROLLER_SOURCES_FILES
         controller/controller.h
         controller/Controller.cpp)
 
-set(PROJECT_EXCEPTIONS_DIR
+set(PROJECT_EXCEPTION_DIR
         ${PROJECT_SOURCES_DIR}/exceptions)
 set(PROJECT_EXCEPTIONS_HEADERS_DIR
-        ${PROJECT_EXCEPTIONS_DIR}/header)
+        ${PROJECT_EXCEPTION_DIR}/header)
 set(PROJECT_EXCEPTIONS_SOURCES_DIR
-        ${PROJECT_EXCEPTIONS_DIR}/sources)
+        ${PROJECT_EXCEPTION_DIR}/sources)
 include_directories(
         ${PROJECT_EXCEPTIONS_HEADERS_DIR}
         ${PROJECT_EXCEPTIONS_SOURCES_DIR})
-set(EXCEPTIONS_SOURCE_FILES
-        ${PROJECT_EXCEPTIONS_HEADERS_DIR}/DataConsistencyException.h
-        ${PROJECT_EXCEPTIONS_SOURCES_DIR}/DataConsistencyException.cpp
-        ${PROJECT_EXCEPTIONS_HEADERS_DIR}/DuplicatedDataException.h
-        ${PROJECT_EXCEPTIONS_SOURCES_DIR}/DuplicatedDataException.cpp
-        ${PROJECT_EXCEPTIONS_HEADERS_DIR}/InvalidDataException.h
-        ${PROJECT_EXCEPTIONS_SOURCES_DIR}/InvalidDataException.cpp)
+set(EXCEPTION_SOURCE_FILES
+        ${PROJECT_EXCEPTION_HEADERS_DIR}/DataConsistencyException.h
+        ${PROJECT_EXCEPTION_SOURCES_DIR}/DataConsistencyException.cpp
+        ${PROJECT_EXCEPTION_HEADERS_DIR}/DuplicatedDataException.h
+        ${PROJECT_EXCEPTION_SOURCES_DIR}/DuplicatedDataException.cpp
+        ${PROJECT_EXCEPTION_HEADERS_DIR}/InvalidDataException.h
+        ${PROJECT_EXCEPTION_SOURCES_DIR}/InvalidDataException.cpp)
 
 set(PROJECT_MODEL_DIR
         ${PROJECT_SOURCES_DIR}/model)
@@ -100,20 +100,45 @@ set(SOURCE_FILES
         mock/MockData.h
         mock/MockData.cpp
         header/model/ClientOrder.h
-        header/model/Client.h)
+        header/model/Client.h
+header/model/SaboresIsep.h)
 
+add_executable(SaboresIsep ${PROJECT_SOURCE_DIR}/ main.cpp
+        mock/MockData.cpp
+        sources/controller/Controller.cpp
+        sources/exceptions/DataConsistencyException.cpp
+        sources/exceptions/DuplicatedDataException.cpp
+        sources/exceptions/InvalidDataException.cpp
+        sources/model/Client.cpp
+        sources/model/ClientContainer.cpp
+        sources/model/ClientOrderContainer.cpp
+        sources/model/DonoContainer.cpp
+        sources/model/Menu.cpp
+        sources/model/MenuContainer.cpp
+        sources/model/Order.cpp
+        sources/model/SaboresIsep.cpp
+        sources/model/Supplier.cpp
+        sources/model/SupplierContainer.cpp
+        sources/model/SupplierOrder.cpp
+        sources/model/SupplierOrderContainer.cpp
+        sources/model/User.cpp
+        sources/views/ClientOrderView.cpp
+        sources/views/ClientView.cpp
+        sources/views/MenuView.cpp
+        sources/views/SupplierOrderView.cpp
+        sources/views/Utils.cpp
+        sources/views/View.cpp)
 
 
 set(CMAKE_INCLUDE_DIRS
-        ${PROJECT_SOURCE_DIR}/include
-        ${PROJECT_SOURCE_DIR}/external/include)
+        ${PROJECT_SOURCES_DIR}/include
+        ${PROJECT_SOURCES_DIR}/external/include)
 include_directories(
-        ${PROJECT_SOURCE_DIR}/include
-        ${PROJECT_SOURCE_DIR}/external)
+        ${PROJECT_SOURCES_DIR}/include
+        ${PROJECT_SOURCES_DIR}/external)
 include_directories(
-        ${PROJECT_SOURCE_DIR}/../../header)
-include_directories(${PROJECT_SOURCE_DIR}/custom/header)
-include_directories(${PROJECT_SOURCE_DIR}/header)
-
-
-
+        ${PROJECT_SOURCES_DIR}/../../header)
+include_directories(${PROJECT_SOURCES_DIR}/custom/header)
+include_directories(${PROJECT_SOURCES_DIR}/header)
+set(Sources my_lib.cpp)
+set(Headers header_of_my_lib.h)

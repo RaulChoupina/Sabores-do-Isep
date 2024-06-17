@@ -1,0 +1,1 @@
+-I/controller -I/exceptions/header -I/exceptions/sources -I/model/header -I/model/sources -I"C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/VIEWS/header" -I"C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/VIEWS/sources" -I/include -I/external -I/../../header -I/custom/header -I/header

@@ -1,7 +1,9 @@
 //
 // Created by HP on 27/05/2024.
 //
-#include "../header/InvalidDataException.h"
+#include "InvalidDataException.h"
+#include <string>
+using namespace std;
 
 InvalidDataException:: InvalidDataException(string data){
     this -> data = "Error:[" + data + "] duplicated !! ";

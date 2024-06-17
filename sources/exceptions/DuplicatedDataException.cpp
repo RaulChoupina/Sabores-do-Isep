@@ -1,7 +1,9 @@
 //
 // Created by HP on 27/05/2024.
 //
-#include "../header/DuplicateDataException.h"
+#include "DuplicateDataException.h"
+#include <string>
+using namespace std;
 
 DuplicateDataException :: DuplicateDataException(string data){
     this ->data = "Error: ["+data +"] duplicated !!";

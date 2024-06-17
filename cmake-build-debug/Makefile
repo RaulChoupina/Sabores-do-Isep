@@ -115,6 +115,619 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named SaboresIsep
+
+# Build rule for target.
+SaboresIsep: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SaboresIsep
+.PHONY : SaboresIsep
+
+# fast build rule for target.
+SaboresIsep/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/build
+.PHONY : SaboresIsep/fast
+
+main.obj: main.cpp.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+mock/MockData.obj: mock/MockData.cpp.obj
+.PHONY : mock/MockData.obj
+
+# target to build an object file
+mock/MockData.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/mock/MockData.cpp.obj
+.PHONY : mock/MockData.cpp.obj
+
+mock/MockData.i: mock/MockData.cpp.i
+.PHONY : mock/MockData.i
+
+# target to preprocess a source file
+mock/MockData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/mock/MockData.cpp.i
+.PHONY : mock/MockData.cpp.i
+
+mock/MockData.s: mock/MockData.cpp.s
+.PHONY : mock/MockData.s
+
+# target to generate assembly for a file
+mock/MockData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/mock/MockData.cpp.s
+.PHONY : mock/MockData.cpp.s
+
+sources/controller/Controller.obj: sources/controller/Controller.cpp.obj
+.PHONY : sources/controller/Controller.obj
+
+# target to build an object file
+sources/controller/Controller.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/controller/Controller.cpp.obj
+.PHONY : sources/controller/Controller.cpp.obj
+
+sources/controller/Controller.i: sources/controller/Controller.cpp.i
+.PHONY : sources/controller/Controller.i
+
+# target to preprocess a source file
+sources/controller/Controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/controller/Controller.cpp.i
+.PHONY : sources/controller/Controller.cpp.i
+
+sources/controller/Controller.s: sources/controller/Controller.cpp.s
+.PHONY : sources/controller/Controller.s
+
+# target to generate assembly for a file
+sources/controller/Controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/controller/Controller.cpp.s
+.PHONY : sources/controller/Controller.cpp.s
+
+sources/exceptions/DataConsistencyException.obj: sources/exceptions/DataConsistencyException.cpp.obj
+.PHONY : sources/exceptions/DataConsistencyException.obj
+
+# target to build an object file
+sources/exceptions/DataConsistencyException.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/exceptions/DataConsistencyException.cpp.obj
+.PHONY : sources/exceptions/DataConsistencyException.cpp.obj
+
+sources/exceptions/DataConsistencyException.i: sources/exceptions/DataConsistencyException.cpp.i
+.PHONY : sources/exceptions/DataConsistencyException.i
+
+# target to preprocess a source file
+sources/exceptions/DataConsistencyException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/exceptions/DataConsistencyException.cpp.i
+.PHONY : sources/exceptions/DataConsistencyException.cpp.i
+
+sources/exceptions/DataConsistencyException.s: sources/exceptions/DataConsistencyException.cpp.s
+.PHONY : sources/exceptions/DataConsistencyException.s
+
+# target to generate assembly for a file
+sources/exceptions/DataConsistencyException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/exceptions/DataConsistencyException.cpp.s
+.PHONY : sources/exceptions/DataConsistencyException.cpp.s
+
+sources/exceptions/DuplicatedDataException.obj: sources/exceptions/DuplicatedDataException.cpp.obj
+.PHONY : sources/exceptions/DuplicatedDataException.obj
+
+# target to build an object file
+sources/exceptions/DuplicatedDataException.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/exceptions/DuplicatedDataException.cpp.obj
+.PHONY : sources/exceptions/DuplicatedDataException.cpp.obj
+
+sources/exceptions/DuplicatedDataException.i: sources/exceptions/DuplicatedDataException.cpp.i
+.PHONY : sources/exceptions/DuplicatedDataException.i
+
+# target to preprocess a source file
+sources/exceptions/DuplicatedDataException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/exceptions/DuplicatedDataException.cpp.i
+.PHONY : sources/exceptions/DuplicatedDataException.cpp.i
+
+sources/exceptions/DuplicatedDataException.s: sources/exceptions/DuplicatedDataException.cpp.s
+.PHONY : sources/exceptions/DuplicatedDataException.s
+
+# target to generate assembly for a file
+sources/exceptions/DuplicatedDataException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/exceptions/DuplicatedDataException.cpp.s
+.PHONY : sources/exceptions/DuplicatedDataException.cpp.s
+
+sources/exceptions/InvalidDataException.obj: sources/exceptions/InvalidDataException.cpp.obj
+.PHONY : sources/exceptions/InvalidDataException.obj
+
+# target to build an object file
+sources/exceptions/InvalidDataException.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/exceptions/InvalidDataException.cpp.obj
+.PHONY : sources/exceptions/InvalidDataException.cpp.obj
+
+sources/exceptions/InvalidDataException.i: sources/exceptions/InvalidDataException.cpp.i
+.PHONY : sources/exceptions/InvalidDataException.i
+
+# target to preprocess a source file
+sources/exceptions/InvalidDataException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/exceptions/InvalidDataException.cpp.i
+.PHONY : sources/exceptions/InvalidDataException.cpp.i
+
+sources/exceptions/InvalidDataException.s: sources/exceptions/InvalidDataException.cpp.s
+.PHONY : sources/exceptions/InvalidDataException.s
+
+# target to generate assembly for a file
+sources/exceptions/InvalidDataException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/exceptions/InvalidDataException.cpp.s
+.PHONY : sources/exceptions/InvalidDataException.cpp.s
+
+sources/model/Client.obj: sources/model/Client.cpp.obj
+.PHONY : sources/model/Client.obj
+
+# target to build an object file
+sources/model/Client.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/Client.cpp.obj
+.PHONY : sources/model/Client.cpp.obj
+
+sources/model/Client.i: sources/model/Client.cpp.i
+.PHONY : sources/model/Client.i
+
+# target to preprocess a source file
+sources/model/Client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/Client.cpp.i
+.PHONY : sources/model/Client.cpp.i
+
+sources/model/Client.s: sources/model/Client.cpp.s
+.PHONY : sources/model/Client.s
+
+# target to generate assembly for a file
+sources/model/Client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/Client.cpp.s
+.PHONY : sources/model/Client.cpp.s
+
+sources/model/ClientContainer.obj: sources/model/ClientContainer.cpp.obj
+.PHONY : sources/model/ClientContainer.obj
+
+# target to build an object file
+sources/model/ClientContainer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/ClientContainer.cpp.obj
+.PHONY : sources/model/ClientContainer.cpp.obj
+
+sources/model/ClientContainer.i: sources/model/ClientContainer.cpp.i
+.PHONY : sources/model/ClientContainer.i
+
+# target to preprocess a source file
+sources/model/ClientContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/ClientContainer.cpp.i
+.PHONY : sources/model/ClientContainer.cpp.i
+
+sources/model/ClientContainer.s: sources/model/ClientContainer.cpp.s
+.PHONY : sources/model/ClientContainer.s
+
+# target to generate assembly for a file
+sources/model/ClientContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/ClientContainer.cpp.s
+.PHONY : sources/model/ClientContainer.cpp.s
+
+sources/model/ClientOrderContainer.obj: sources/model/ClientOrderContainer.cpp.obj
+.PHONY : sources/model/ClientOrderContainer.obj
+
+# target to build an object file
+sources/model/ClientOrderContainer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/ClientOrderContainer.cpp.obj
+.PHONY : sources/model/ClientOrderContainer.cpp.obj
+
+sources/model/ClientOrderContainer.i: sources/model/ClientOrderContainer.cpp.i
+.PHONY : sources/model/ClientOrderContainer.i
+
+# target to preprocess a source file
+sources/model/ClientOrderContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/ClientOrderContainer.cpp.i
+.PHONY : sources/model/ClientOrderContainer.cpp.i
+
+sources/model/ClientOrderContainer.s: sources/model/ClientOrderContainer.cpp.s
+.PHONY : sources/model/ClientOrderContainer.s
+
+# target to generate assembly for a file
+sources/model/ClientOrderContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/ClientOrderContainer.cpp.s
+.PHONY : sources/model/ClientOrderContainer.cpp.s
+
+sources/model/DonoContainer.obj: sources/model/DonoContainer.cpp.obj
+.PHONY : sources/model/DonoContainer.obj
+
+# target to build an object file
+sources/model/DonoContainer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/DonoContainer.cpp.obj
+.PHONY : sources/model/DonoContainer.cpp.obj
+
+sources/model/DonoContainer.i: sources/model/DonoContainer.cpp.i
+.PHONY : sources/model/DonoContainer.i
+
+# target to preprocess a source file
+sources/model/DonoContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/DonoContainer.cpp.i
+.PHONY : sources/model/DonoContainer.cpp.i
+
+sources/model/DonoContainer.s: sources/model/DonoContainer.cpp.s
+.PHONY : sources/model/DonoContainer.s
+
+# target to generate assembly for a file
+sources/model/DonoContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/DonoContainer.cpp.s
+.PHONY : sources/model/DonoContainer.cpp.s
+
+sources/model/Menu.obj: sources/model/Menu.cpp.obj
+.PHONY : sources/model/Menu.obj
+
+# target to build an object file
+sources/model/Menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/Menu.cpp.obj
+.PHONY : sources/model/Menu.cpp.obj
+
+sources/model/Menu.i: sources/model/Menu.cpp.i
+.PHONY : sources/model/Menu.i
+
+# target to preprocess a source file
+sources/model/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/Menu.cpp.i
+.PHONY : sources/model/Menu.cpp.i
+
+sources/model/Menu.s: sources/model/Menu.cpp.s
+.PHONY : sources/model/Menu.s
+
+# target to generate assembly for a file
+sources/model/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/Menu.cpp.s
+.PHONY : sources/model/Menu.cpp.s
+
+sources/model/MenuContainer.obj: sources/model/MenuContainer.cpp.obj
+.PHONY : sources/model/MenuContainer.obj
+
+# target to build an object file
+sources/model/MenuContainer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/MenuContainer.cpp.obj
+.PHONY : sources/model/MenuContainer.cpp.obj
+
+sources/model/MenuContainer.i: sources/model/MenuContainer.cpp.i
+.PHONY : sources/model/MenuContainer.i
+
+# target to preprocess a source file
+sources/model/MenuContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/MenuContainer.cpp.i
+.PHONY : sources/model/MenuContainer.cpp.i
+
+sources/model/MenuContainer.s: sources/model/MenuContainer.cpp.s
+.PHONY : sources/model/MenuContainer.s
+
+# target to generate assembly for a file
+sources/model/MenuContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/MenuContainer.cpp.s
+.PHONY : sources/model/MenuContainer.cpp.s
+
+sources/model/Order.obj: sources/model/Order.cpp.obj
+.PHONY : sources/model/Order.obj
+
+# target to build an object file
+sources/model/Order.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/Order.cpp.obj
+.PHONY : sources/model/Order.cpp.obj
+
+sources/model/Order.i: sources/model/Order.cpp.i
+.PHONY : sources/model/Order.i
+
+# target to preprocess a source file
+sources/model/Order.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/Order.cpp.i
+.PHONY : sources/model/Order.cpp.i
+
+sources/model/Order.s: sources/model/Order.cpp.s
+.PHONY : sources/model/Order.s
+
+# target to generate assembly for a file
+sources/model/Order.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/Order.cpp.s
+.PHONY : sources/model/Order.cpp.s
+
+sources/model/SaboresIsep.obj: sources/model/SaboresIsep.cpp.obj
+.PHONY : sources/model/SaboresIsep.obj
+
+# target to build an object file
+sources/model/SaboresIsep.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/SaboresIsep.cpp.obj
+.PHONY : sources/model/SaboresIsep.cpp.obj
+
+sources/model/SaboresIsep.i: sources/model/SaboresIsep.cpp.i
+.PHONY : sources/model/SaboresIsep.i
+
+# target to preprocess a source file
+sources/model/SaboresIsep.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/SaboresIsep.cpp.i
+.PHONY : sources/model/SaboresIsep.cpp.i
+
+sources/model/SaboresIsep.s: sources/model/SaboresIsep.cpp.s
+.PHONY : sources/model/SaboresIsep.s
+
+# target to generate assembly for a file
+sources/model/SaboresIsep.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/SaboresIsep.cpp.s
+.PHONY : sources/model/SaboresIsep.cpp.s
+
+sources/model/Supplier.obj: sources/model/Supplier.cpp.obj
+.PHONY : sources/model/Supplier.obj
+
+# target to build an object file
+sources/model/Supplier.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/Supplier.cpp.obj
+.PHONY : sources/model/Supplier.cpp.obj
+
+sources/model/Supplier.i: sources/model/Supplier.cpp.i
+.PHONY : sources/model/Supplier.i
+
+# target to preprocess a source file
+sources/model/Supplier.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/Supplier.cpp.i
+.PHONY : sources/model/Supplier.cpp.i
+
+sources/model/Supplier.s: sources/model/Supplier.cpp.s
+.PHONY : sources/model/Supplier.s
+
+# target to generate assembly for a file
+sources/model/Supplier.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/Supplier.cpp.s
+.PHONY : sources/model/Supplier.cpp.s
+
+sources/model/SupplierContainer.obj: sources/model/SupplierContainer.cpp.obj
+.PHONY : sources/model/SupplierContainer.obj
+
+# target to build an object file
+sources/model/SupplierContainer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/SupplierContainer.cpp.obj
+.PHONY : sources/model/SupplierContainer.cpp.obj
+
+sources/model/SupplierContainer.i: sources/model/SupplierContainer.cpp.i
+.PHONY : sources/model/SupplierContainer.i
+
+# target to preprocess a source file
+sources/model/SupplierContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/SupplierContainer.cpp.i
+.PHONY : sources/model/SupplierContainer.cpp.i
+
+sources/model/SupplierContainer.s: sources/model/SupplierContainer.cpp.s
+.PHONY : sources/model/SupplierContainer.s
+
+# target to generate assembly for a file
+sources/model/SupplierContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/SupplierContainer.cpp.s
+.PHONY : sources/model/SupplierContainer.cpp.s
+
+sources/model/SupplierOrder.obj: sources/model/SupplierOrder.cpp.obj
+.PHONY : sources/model/SupplierOrder.obj
+
+# target to build an object file
+sources/model/SupplierOrder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/SupplierOrder.cpp.obj
+.PHONY : sources/model/SupplierOrder.cpp.obj
+
+sources/model/SupplierOrder.i: sources/model/SupplierOrder.cpp.i
+.PHONY : sources/model/SupplierOrder.i
+
+# target to preprocess a source file
+sources/model/SupplierOrder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/SupplierOrder.cpp.i
+.PHONY : sources/model/SupplierOrder.cpp.i
+
+sources/model/SupplierOrder.s: sources/model/SupplierOrder.cpp.s
+.PHONY : sources/model/SupplierOrder.s
+
+# target to generate assembly for a file
+sources/model/SupplierOrder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/SupplierOrder.cpp.s
+.PHONY : sources/model/SupplierOrder.cpp.s
+
+sources/model/SupplierOrderContainer.obj: sources/model/SupplierOrderContainer.cpp.obj
+.PHONY : sources/model/SupplierOrderContainer.obj
+
+# target to build an object file
+sources/model/SupplierOrderContainer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/SupplierOrderContainer.cpp.obj
+.PHONY : sources/model/SupplierOrderContainer.cpp.obj
+
+sources/model/SupplierOrderContainer.i: sources/model/SupplierOrderContainer.cpp.i
+.PHONY : sources/model/SupplierOrderContainer.i
+
+# target to preprocess a source file
+sources/model/SupplierOrderContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/SupplierOrderContainer.cpp.i
+.PHONY : sources/model/SupplierOrderContainer.cpp.i
+
+sources/model/SupplierOrderContainer.s: sources/model/SupplierOrderContainer.cpp.s
+.PHONY : sources/model/SupplierOrderContainer.s
+
+# target to generate assembly for a file
+sources/model/SupplierOrderContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/SupplierOrderContainer.cpp.s
+.PHONY : sources/model/SupplierOrderContainer.cpp.s
+
+sources/model/User.obj: sources/model/User.cpp.obj
+.PHONY : sources/model/User.obj
+
+# target to build an object file
+sources/model/User.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/User.cpp.obj
+.PHONY : sources/model/User.cpp.obj
+
+sources/model/User.i: sources/model/User.cpp.i
+.PHONY : sources/model/User.i
+
+# target to preprocess a source file
+sources/model/User.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/User.cpp.i
+.PHONY : sources/model/User.cpp.i
+
+sources/model/User.s: sources/model/User.cpp.s
+.PHONY : sources/model/User.s
+
+# target to generate assembly for a file
+sources/model/User.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/model/User.cpp.s
+.PHONY : sources/model/User.cpp.s
+
+sources/views/ClientOrderView.obj: sources/views/ClientOrderView.cpp.obj
+.PHONY : sources/views/ClientOrderView.obj
+
+# target to build an object file
+sources/views/ClientOrderView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/ClientOrderView.cpp.obj
+.PHONY : sources/views/ClientOrderView.cpp.obj
+
+sources/views/ClientOrderView.i: sources/views/ClientOrderView.cpp.i
+.PHONY : sources/views/ClientOrderView.i
+
+# target to preprocess a source file
+sources/views/ClientOrderView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/ClientOrderView.cpp.i
+.PHONY : sources/views/ClientOrderView.cpp.i
+
+sources/views/ClientOrderView.s: sources/views/ClientOrderView.cpp.s
+.PHONY : sources/views/ClientOrderView.s
+
+# target to generate assembly for a file
+sources/views/ClientOrderView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/ClientOrderView.cpp.s
+.PHONY : sources/views/ClientOrderView.cpp.s
+
+sources/views/ClientView.obj: sources/views/ClientView.cpp.obj
+.PHONY : sources/views/ClientView.obj
+
+# target to build an object file
+sources/views/ClientView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/ClientView.cpp.obj
+.PHONY : sources/views/ClientView.cpp.obj
+
+sources/views/ClientView.i: sources/views/ClientView.cpp.i
+.PHONY : sources/views/ClientView.i
+
+# target to preprocess a source file
+sources/views/ClientView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/ClientView.cpp.i
+.PHONY : sources/views/ClientView.cpp.i
+
+sources/views/ClientView.s: sources/views/ClientView.cpp.s
+.PHONY : sources/views/ClientView.s
+
+# target to generate assembly for a file
+sources/views/ClientView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/ClientView.cpp.s
+.PHONY : sources/views/ClientView.cpp.s
+
+sources/views/MenuView.obj: sources/views/MenuView.cpp.obj
+.PHONY : sources/views/MenuView.obj
+
+# target to build an object file
+sources/views/MenuView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/MenuView.cpp.obj
+.PHONY : sources/views/MenuView.cpp.obj
+
+sources/views/MenuView.i: sources/views/MenuView.cpp.i
+.PHONY : sources/views/MenuView.i
+
+# target to preprocess a source file
+sources/views/MenuView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/MenuView.cpp.i
+.PHONY : sources/views/MenuView.cpp.i
+
+sources/views/MenuView.s: sources/views/MenuView.cpp.s
+.PHONY : sources/views/MenuView.s
+
+# target to generate assembly for a file
+sources/views/MenuView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/MenuView.cpp.s
+.PHONY : sources/views/MenuView.cpp.s
+
+sources/views/SupplierOrderView.obj: sources/views/SupplierOrderView.cpp.obj
+.PHONY : sources/views/SupplierOrderView.obj
+
+# target to build an object file
+sources/views/SupplierOrderView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/SupplierOrderView.cpp.obj
+.PHONY : sources/views/SupplierOrderView.cpp.obj
+
+sources/views/SupplierOrderView.i: sources/views/SupplierOrderView.cpp.i
+.PHONY : sources/views/SupplierOrderView.i
+
+# target to preprocess a source file
+sources/views/SupplierOrderView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/SupplierOrderView.cpp.i
+.PHONY : sources/views/SupplierOrderView.cpp.i
+
+sources/views/SupplierOrderView.s: sources/views/SupplierOrderView.cpp.s
+.PHONY : sources/views/SupplierOrderView.s
+
+# target to generate assembly for a file
+sources/views/SupplierOrderView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/SupplierOrderView.cpp.s
+.PHONY : sources/views/SupplierOrderView.cpp.s
+
+sources/views/Utils.obj: sources/views/Utils.cpp.obj
+.PHONY : sources/views/Utils.obj
+
+# target to build an object file
+sources/views/Utils.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/Utils.cpp.obj
+.PHONY : sources/views/Utils.cpp.obj
+
+sources/views/Utils.i: sources/views/Utils.cpp.i
+.PHONY : sources/views/Utils.i
+
+# target to preprocess a source file
+sources/views/Utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/Utils.cpp.i
+.PHONY : sources/views/Utils.cpp.i
+
+sources/views/Utils.s: sources/views/Utils.cpp.s
+.PHONY : sources/views/Utils.s
+
+# target to generate assembly for a file
+sources/views/Utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/Utils.cpp.s
+.PHONY : sources/views/Utils.cpp.s
+
+sources/views/View.obj: sources/views/View.cpp.obj
+.PHONY : sources/views/View.obj
+
+# target to build an object file
+sources/views/View.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/View.cpp.obj
+.PHONY : sources/views/View.cpp.obj
+
+sources/views/View.i: sources/views/View.cpp.i
+.PHONY : sources/views/View.i
+
+# target to preprocess a source file
+sources/views/View.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/View.cpp.i
+.PHONY : sources/views/View.cpp.i
+
+sources/views/View.s: sources/views/View.cpp.s
+.PHONY : sources/views/View.s
+
+# target to generate assembly for a file
+sources/views/View.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SaboresIsep.dir\build.make CMakeFiles/SaboresIsep.dir/sources/views/View.cpp.s
+.PHONY : sources/views/View.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -123,6 +736,82 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... SaboresIsep
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
+	@echo ... mock/MockData.obj
+	@echo ... mock/MockData.i
+	@echo ... mock/MockData.s
+	@echo ... sources/controller/Controller.obj
+	@echo ... sources/controller/Controller.i
+	@echo ... sources/controller/Controller.s
+	@echo ... sources/exceptions/DataConsistencyException.obj
+	@echo ... sources/exceptions/DataConsistencyException.i
+	@echo ... sources/exceptions/DataConsistencyException.s
+	@echo ... sources/exceptions/DuplicatedDataException.obj
+	@echo ... sources/exceptions/DuplicatedDataException.i
+	@echo ... sources/exceptions/DuplicatedDataException.s
+	@echo ... sources/exceptions/InvalidDataException.obj
+	@echo ... sources/exceptions/InvalidDataException.i
+	@echo ... sources/exceptions/InvalidDataException.s
+	@echo ... sources/model/Client.obj
+	@echo ... sources/model/Client.i
+	@echo ... sources/model/Client.s
+	@echo ... sources/model/ClientContainer.obj
+	@echo ... sources/model/ClientContainer.i
+	@echo ... sources/model/ClientContainer.s
+	@echo ... sources/model/ClientOrderContainer.obj
+	@echo ... sources/model/ClientOrderContainer.i
+	@echo ... sources/model/ClientOrderContainer.s
+	@echo ... sources/model/DonoContainer.obj
+	@echo ... sources/model/DonoContainer.i
+	@echo ... sources/model/DonoContainer.s
+	@echo ... sources/model/Menu.obj
+	@echo ... sources/model/Menu.i
+	@echo ... sources/model/Menu.s
+	@echo ... sources/model/MenuContainer.obj
+	@echo ... sources/model/MenuContainer.i
+	@echo ... sources/model/MenuContainer.s
+	@echo ... sources/model/Order.obj
+	@echo ... sources/model/Order.i
+	@echo ... sources/model/Order.s
+	@echo ... sources/model/SaboresIsep.obj
+	@echo ... sources/model/SaboresIsep.i
+	@echo ... sources/model/SaboresIsep.s
+	@echo ... sources/model/Supplier.obj
+	@echo ... sources/model/Supplier.i
+	@echo ... sources/model/Supplier.s
+	@echo ... sources/model/SupplierContainer.obj
+	@echo ... sources/model/SupplierContainer.i
+	@echo ... sources/model/SupplierContainer.s
+	@echo ... sources/model/SupplierOrder.obj
+	@echo ... sources/model/SupplierOrder.i
+	@echo ... sources/model/SupplierOrder.s
+	@echo ... sources/model/SupplierOrderContainer.obj
+	@echo ... sources/model/SupplierOrderContainer.i
+	@echo ... sources/model/SupplierOrderContainer.s
+	@echo ... sources/model/User.obj
+	@echo ... sources/model/User.i
+	@echo ... sources/model/User.s
+	@echo ... sources/views/ClientOrderView.obj
+	@echo ... sources/views/ClientOrderView.i
+	@echo ... sources/views/ClientOrderView.s
+	@echo ... sources/views/ClientView.obj
+	@echo ... sources/views/ClientView.i
+	@echo ... sources/views/ClientView.s
+	@echo ... sources/views/MenuView.obj
+	@echo ... sources/views/MenuView.i
+	@echo ... sources/views/MenuView.s
+	@echo ... sources/views/SupplierOrderView.obj
+	@echo ... sources/views/SupplierOrderView.i
+	@echo ... sources/views/SupplierOrderView.s
+	@echo ... sources/views/Utils.obj
+	@echo ... sources/views/Utils.i
+	@echo ... sources/views/Utils.s
+	@echo ... sources/views/View.obj
+	@echo ... sources/views/View.i
+	@echo ... sources/views/View.s
 .PHONY : help
 
 

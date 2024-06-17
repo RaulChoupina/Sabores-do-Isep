@@ -1,7 +1,9 @@
 //
 // Created by HP on 27/05/2024.
 //
-#include "../header/DataConsistencyException.h"
+#include "DataConsistencyException.h"
+#include <string>
+using namespace std;
 
 DataConsistencyException::DataConsistencyException(string data){
     this->data = "Error: [" + data + "] duplicated!!";

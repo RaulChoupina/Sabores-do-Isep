@@ -14,6 +14,8 @@
 #include "SupplierOrderContainer.h"
 #include "SupplierContainer.h"
 
+using namespace std;
+
 
     class SaboresIsep {
     private:
