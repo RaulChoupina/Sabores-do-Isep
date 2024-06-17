@@ -4,32 +4,32 @@ project(SaboresIsep)
 set(CMAKE_CXX_STANDARD 17)
 
 set(PROJECT_CONTROLLER_DIR
-        ${PROJECT_SOURCE_DIR}/controller)
+        ${PROJECT_SOURCES_DIR}/controller)
 include_directories(
         ${PROJECT_CONTROLLER_DIR})
-set(CONTROLLER_SOURCE_FILES
-        controller/Controller.h
+set(CONTROLLER_SOURCES_FILES
+        controller/controller.h
         controller/Controller.cpp)
 
-set(PROJECT_EXCEPTION_DIR
-        ${PROJECT_SOURCE_DIR}/exception)
-set(PROJECT_EXCEPTION_HEADERS_DIR
-        ${PROJECT_EXCEPTION_DIR}/header)
-set(PROJECT_EXCEPTION_SOURCES_DIR
-        ${PROJECT_EXCEPTION_DIR}/sources)
+set(PROJECT_EXCEPTIONS_DIR
+        ${PROJECT_SOURCES_DIR}/exceptions)
+set(PROJECT_EXCEPTIONS_HEADERS_DIR
+        ${PROJECT_EXCEPTIONS_DIR}/header)
+set(PROJECT_EXCEPTIONS_SOURCES_DIR
+        ${PROJECT_EXCEPTIONS_DIR}/sources)
 include_directories(
-        ${PROJECT_EXCEPTION_HEADERS_DIR}
-        ${PROJECT_EXCEPTION_SOURCES_DIR})
-set(EXCEPTION_SOURCE_FILES
-        ${PROJECT_EXCEPTION_HEADERS_DIR}/DataConsistencyException.h
-        ${PROJECT_EXCEPTION_SOURCES_DIR}/DataConsistencyException.cpp
-        ${PROJECT_EXCEPTION_HEADERS_DIR}/DuplicatedDataException.h
-        ${PROJECT_EXCEPTION_SOURCES_DIR}/DuplicatedDataException.cpp
-        ${PROJECT_EXCEPTION_HEADERS_DIR}/InvalidDataException.h
-        ${PROJECT_EXCEPTION_SOURCES_DIR}/InvalidDataException.cpp)
+        ${PROJECT_EXCEPTIONS_HEADERS_DIR}
+        ${PROJECT_EXCEPTIONS_SOURCES_DIR})
+set(EXCEPTIONS_SOURCE_FILES
+        ${PROJECT_EXCEPTIONS_HEADERS_DIR}/DataConsistencyException.h
+        ${PROJECT_EXCEPTIONS_SOURCES_DIR}/DataConsistencyException.cpp
+        ${PROJECT_EXCEPTIONS_HEADERS_DIR}/DuplicatedDataException.h
+        ${PROJECT_EXCEPTIONS_SOURCES_DIR}/DuplicatedDataException.cpp
+        ${PROJECT_EXCEPTIONS_HEADERS_DIR}/InvalidDataException.h
+        ${PROJECT_EXCEPTIONS_SOURCES_DIR}/InvalidDataException.cpp)
 
 set(PROJECT_MODEL_DIR
-        ${PROJECT_SOURCE_DIR}/model)
+        ${PROJECT_SOURCES_DIR}/model)
 set(PROJECT_MODEL_HEADERS_DIR
         ${PROJECT_MODEL_DIR}/header)
 set(PROJECT_MODEL_SOURCES_DIR
@@ -37,7 +37,7 @@ set(PROJECT_MODEL_SOURCES_DIR
 include_directories(
         ${PROJECT_MODEL_HEADERS_DIR}
         ${PROJECT_MODEL_SOURCES_DIR})
-set(MODEL_SOURCE_FILES
+set(MODEL_SOURCES_FILES
         ${PROJECT_MODEL_HEADERS_DIR}/Client.h
         ${PROJECT_MODEL_SOURCES_DIR}/Client.cpp
         ${PROJECT_MODEL_HEADERS_DIR}/ClientContainer.h
@@ -95,7 +95,7 @@ set(VIEWS_SOURCE_FILES
 
 set(SOURCE_FILES
         main.cpp
-        controller/Controller.h
+        controller/controller.h
         controller/Controller.cpp
         mock/MockData.h
         mock/MockData.cpp
@@ -103,14 +103,6 @@ set(SOURCE_FILES
         header/model/Client.h)
 
 
-add_executable(
-        main.cpp
-        controller.cpp
-        ${SOURCE_FILES}
-        ${MODEL_SOURCE_FILES}
-        ${VIEWS_SOURCE_FILES}
-        ${EXCEPTION_SOURCE_FILES}
-)
 
 set(CMAKE_INCLUDE_DIRS
         ${PROJECT_SOURCE_DIR}/include
@@ -122,4 +114,6 @@ include_directories(
         ${PROJECT_SOURCE_DIR}/../../header)
 include_directories(${PROJECT_SOURCE_DIR}/custom/header)
 include_directories(${PROJECT_SOURCE_DIR}/header)
+
+
 
