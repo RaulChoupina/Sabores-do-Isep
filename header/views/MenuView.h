@@ -17,6 +17,6 @@
       void printMenuContainerDono (list < Menu >& menu, const string& listTitle);
       string getName();
       void MenuUnavailable();
-      }
+      };
 
 #endif //MENUVIEW_H

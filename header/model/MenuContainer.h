@@ -6,7 +6,7 @@
 #define MENUCONTAINER_H
 
 #include <iostream>
-#include "DuplicatedEntryException.h"
+#include "DuplicatedDataException.h"
 #include <list>
 #include "Menu.h"
 
@@ -30,5 +30,5 @@ public:
           int amountInStock,
           bool isAvailable);
 void reset();
-}
+};
 #endif //MENUCONTAINER_H

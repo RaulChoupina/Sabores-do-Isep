@@ -6,14 +6,14 @@
 #define SABORESISEP_H
 
 #include <iostream>
-#include <string>
+#include <string.h>
 #include "DonoContainer.h"
 #include "ClientContainer.h"
 #include "ClientOrderContainer.h"
 #include "MenuContainer.h"
 #include "SupplierOrderContainer.h"
 #include "SupplierContainer.h"
-using namespace std;
+
 
     class SaboresIsep {
     private:
@@ -39,5 +39,5 @@ using namespace std;
       SupplierOrderContainer & getSupplierOrderContainer();
       SupplierContainer & getSupplierContainer();
 
-}
+};
 #endif //SABORESISEP_H

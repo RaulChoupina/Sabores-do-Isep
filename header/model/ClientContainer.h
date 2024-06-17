@@ -10,13 +10,18 @@
 #include "Client.h"
 #include <string>
 
-class ClientContainer{
+class ClientContainer {
 private:
     list<Client> clients;
-    list<Client>::iterator searchByEmail(string& email);
+
+    list<Client>::iterator searchByEmail(string &email);
+
 public:
     list<Client> getAll();
-    Client* getByEmail(string& email);
-    void addClient(Client& client);
+
+    Client *getByEmail(string &email);
+
+    void addClient(Client &client);
+};
 
 #endif //CLIENTCONTAINER_H

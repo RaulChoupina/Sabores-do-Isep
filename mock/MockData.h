@@ -8,19 +8,19 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include "SaboresIsep"
+#include "SaboresIsep.h"
 #include <algorithm>
 #include <string>
 
 using namespace std;
 
-class MockData(){
+class MockData{
 private:
      void loadMockClients(ClientContainer& clientContainer);
      void loadMockMenu(MenuContainer& menuContainer);
      void loadMockSuppliers(SupplierContainer& supplierContainer);
 public:
      void generateData(SaboresIsep& saboresIsep);
-}
+};
 
 #endif //MOCKDATA_H

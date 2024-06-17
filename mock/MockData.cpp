@@ -51,7 +51,7 @@ void MockData:: loadMockMenu (MenuContainer& menuContainer){
         cout << "File not opened" << endl;
         return;
      }
-     for (int rows = 0; row < rows; ++rows){
+     for (int rows = 0; rows < rows; ++rows){
      string val;
      getline(iss,val, ';');
      data[row][col] = val;
@@ -69,7 +69,7 @@ for(int i = 1; i < rows; ++i){
                     stof(data[i][5]));
     menuContainer.add(menu);
     }
-}
+
 void MockData:: loadMockSuppliers (SupplierContainer& supplierContainer){
     int rows = 10;
     int cols = 2;

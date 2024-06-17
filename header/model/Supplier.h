@@ -8,7 +8,7 @@
 #include <iostream>
 #include <string>
 #include "SupplierOrder.h"
-using unsigned std;
+using namespace std;
 
 class Supplier {
 private:
@@ -21,6 +21,6 @@ public:
       bool operator == (const Supplier& obj) const;
       bool operator == (string& name) const;
 
-}
+};
 
 #endif //SUPPLIER_H

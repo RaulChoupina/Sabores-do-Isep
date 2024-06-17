@@ -21,7 +21,7 @@ private:
     Menu* menus;
 public:
     ClientOrderContainer();
-    int getSize(clientOrderContainer& clientOrderContainer);
+    int getSize(ClientOrderContainer& clientOrderContainer);
     list <ClientOrder> getAll();
     ClientOrderContainer getClientOrders();
     ClientOrderContainer getClientOrdersByClient(Client* pClient, ClientOrderContainer& listClientOrderContainer);
@@ -29,6 +29,6 @@ public:
     void setClients(ClientContainer* clients);
     void setMenu(Menu* menus);
 
-}
+};
 
 #endif //CLIENTORDERCONTAINER_H

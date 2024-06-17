@@ -8,8 +8,6 @@ CMake Deprecation Warning:
   use the cmake-file-api(7) to view CMake-generated project build trees.
 
 
--- Configuring done (0.0s)
-CMake Error: Cannot determine link language for target "new_target".
-CMake Error: CMake can not determine linker language for target: new_target
+-- Configuring done (0.1s)
 -- Generating done (0.0s)
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Build files have been written to: C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug

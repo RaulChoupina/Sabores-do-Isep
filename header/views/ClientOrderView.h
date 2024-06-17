@@ -20,5 +20,5 @@
       void OrderPlaced();
       void ThereAreNoOrders();
 
-}
+};
 #endif //SABORES_DO_ISEP_CLIENTORDERVIEW_H

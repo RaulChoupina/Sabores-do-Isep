@@ -14,6 +14,6 @@ private:
     string data;
 public:
     InvalidDataException(string data);
-    cont char* what();
+    const char* what();
 };
 #endif //INVALIDDATAEXCEPTION_H

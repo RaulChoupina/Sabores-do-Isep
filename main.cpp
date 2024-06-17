@@ -1,5 +1,5 @@
 #include <iostream>
-#include "..\/model/SaboresIsep.h"
+#include "SaboresIsep"
 #include "mock/MockData.h"
 #include "controller.h"
 

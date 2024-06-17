@@ -14,6 +14,6 @@ private:
     string data;
 public:
     DataConsistencyException(string data);
-    cont char* what();
+    const char* what();
 };
 #endif //DATACONSISTENCYEXCEPTION_H
