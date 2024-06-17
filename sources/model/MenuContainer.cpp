@@ -1,8 +1,10 @@
 //
 // Created by HP on 27/05/2024.
 //
-#include <iosteam>
+#include <iostream>
 #include "MenuContainer"
+
+using namespace std;
 
 list<Menu>::iterator MenuContainer::search(const string& name) {
     auto it = this->menus.begin();

@@ -3,6 +3,9 @@
 //
 #include "Menu.h"
 #include <iostream>
+
+using namespace std;
+
 Menu::menu(const string &name,
            const string &description,
            const string &categoryFood,

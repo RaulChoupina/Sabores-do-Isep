@@ -4,7 +4,9 @@
 #include <iostream>
 #include "SupplierContainer.h"
 
-list<Supplier> SupplierContainer:getAll() {
+using namespace std;
+
+list<Supplier> SupplierContainer :: getAll() {
     list <Supplier> SupplierContainer(this->suppliers);
     return newSupplierContainer;
 }
