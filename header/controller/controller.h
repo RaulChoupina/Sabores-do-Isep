@@ -5,13 +5,13 @@
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
 #include <iostream>
-#include "SaboresIsep.h"
+#include "../model/SaboresIsep.h"
 #include "View.h"
 #include "ClientView.h"
 #include "ClientOrderView.h"
 #include "SupplierView.h"
 #include "SupplierOrderView.h"
-#include "ProductView.h"
+#include "../views/MenuView.h"
 
 class controller{
 

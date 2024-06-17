@@ -7,8 +7,8 @@
 
 #include <iostream>
 #include <string>
-#include "Supplier.h"
-#include "SupplierContainer.h"
+#include "../model/Supplier.h"
+#include "../model/SupplierContainer.h"
 using namespace std;
 
        class SupplierView{

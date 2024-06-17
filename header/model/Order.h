@@ -1,26 +1,23 @@
-//
-// Created by HP on 27/05/2024.
-//
-
 #ifndef ORDER_H
 #define ORDER_H
 
 #include <iostream>
 #include "MenuContainer.h"
 
-class order {
+class Order { // Corrected class name capitalization
 private:
-       float SellingPrice;
-       MenuContainer menu;
-       void setSellingPrice (const float& pSellingPrice);
+    float SellingPrice;
+    MenuContainer menu;
+
+    // Set method should be private unless intended to be accessed outside
+    void setSellingPrice(const float& pSellingPrice);
 
 public:
-       order();
-       float getSellingPrice();
-       void add (Menu& menu);
-       void updateSellingPriceClient();
-       void updateSellingPriceDonoContainer();
-
+    Order(); // Constructor should match class name
+    float getSellingPrice() const; // Mark method as const
+    void add(Menu& menu);
+    void updateSellingPriceClient();
+    void updateSellingPriceDonoContainer();
 };
 
-#endif //ORDER_H
+#endif // ORDER_H

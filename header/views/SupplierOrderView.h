@@ -6,19 +6,20 @@
 #define SUPPLIERORDERVIEW_H
 
 #include <iostream>
-#include "SupplierOrder.h"
+#include "../model/SupplierOrder.h"
 #include "View.h"
-#include "SupplierOrderContainer.h"
+#include "../model/SupplierOrderContainer.h"
 
-        class SupplierOrder{
-        public:
-        SupplierOrder getSupplierOrder();
-        string getSupplierName();
-        string getMenuName();
-        string getAmountInStock();
-        void printSupplierOrdersBySupplier(SupplierOrderConstainer& supplierOrders, Supplier& supplier);
-        void printAllSupplierOrders(SupplierOrderContainer& supplierOrders);
-        void OrderPlaced();
-        void ThereAreNoOrders();
+class SupplierOrderView { // Renamed class to SupplierOrderView
+public:
+    SupplierOrder getSupplierOrder();
+    std::string getSupplierName(); // Added std:: namespace for string
+    std::string getMenuName();
+    std::string getAmountInStock();
+    void printSupplierOrdersBySupplier(SupplierOrderContainer& supplierOrders, Supplier& supplier);
+    void printAllSupplierOrders(SupplierOrderContainer& supplierOrders);
+    void OrderPlaced();
+    void ThereAreNoOrders();
 };
-#endif //SUPPLIERORDERVIEW_H
+
+#endif // SUPPLIERORDERVIEW_H

@@ -2,9 +2,11 @@
 // Created by HP on 27/05/2024.
 //
 #include <iostream>
+#include <iomanip>
 #include "ClientOrderView.h"
 #include "Utils.h"
 
+using namespace std;
 void ClientOrderView:: OrderPlaced() {
     cout << "Order placed" << endl;
 }

@@ -8,7 +8,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include "SaboresIsep.h"
+#include "../model/SaboresIsep.h"
 #include <algorithm>
 #include <string>
 

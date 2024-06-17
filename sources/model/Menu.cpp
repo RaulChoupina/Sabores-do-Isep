@@ -1,7 +1,7 @@
 //
 // Created by HP on 27/05/2024.
 //
-#include "Menu.h"
+#include "../model/Menu.h"
 #include <iostream>
 
 using namespace std;

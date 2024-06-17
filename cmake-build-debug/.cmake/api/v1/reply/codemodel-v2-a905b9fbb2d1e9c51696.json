@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "SaboresIsep::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SaboresIsep-Debug-38d932911f713d813e0b.json",
-					"name" : "SaboresIsep",
+					"id" : "main.cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main.cpp-Debug-1d36099c2bdc28027673.json",
+					"name" : "main.cpp",
 					"projectIndex" : 0
 				}
 			]

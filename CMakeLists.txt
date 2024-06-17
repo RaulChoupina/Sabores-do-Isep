@@ -4,32 +4,32 @@ project(SaboresIsep)
 set(CMAKE_CXX_STANDARD 17)
 
 set(PROJECT_CONTROLLER_DIR
-        ${PROJECT_SOURCES_DIR}/controller)
+        ${PROJECT_SOURCE_DIR}/controller)
 include_directories(
         ${PROJECT_CONTROLLER_DIR})
-set(CONTROLLER_SOURCES_FILES
-        controller/controller.h
-        controller/Controller.cpp)
+set(CONTROLLER_SOURCE_FILES
+        ${PROJECT_CONTROLLER_DIR}/controller.h
+        ${PROJECT_CONTROLLER_DIR}/Controller.cpp
+)
 
 set(PROJECT_EXCEPTION_DIR
-        ${PROJECT_SOURCES_DIR}/exceptions)
+        ${PROJECT_SOURCE_DIR}/exceptions)
 set(PROJECT_EXCEPTION_HEADERS_DIR
-        ${PROJECT_EXCEPTION_DIR}/header)
+        ${PROJECT_SOURCE_DIR}/header/exceptions)
 set(PROJECT_EXCEPTION_SOURCES_DIR
-        ${PROJECT_EXCEPTION_DIR}/sources)
+        ${PROJECT_SOURCE_DIR}/sources/exceptions)
 include_directories(
         ${PROJECT_EXCEPTION_HEADERS_DIR}
         ${PROJECT_EXCEPTION_SOURCES_DIR})
 set(EXCEPTION_SOURCE_FILES
-        ${PROJECT_EXCEPTION_HEADERS_DIR}/DataConsistencyException.h
-        ${PROJECT_EXCEPTION_SOURCES_DIR}/DataConsistencyException.cpp
         ${PROJECT_EXCEPTION_HEADERS_DIR}/DuplicatedDataException.h
         ${PROJECT_EXCEPTION_SOURCES_DIR}/DuplicatedDataException.cpp
         ${PROJECT_EXCEPTION_HEADERS_DIR}/InvalidDataException.h
-        ${PROJECT_EXCEPTION_SOURCES_DIR}/InvalidDataException.cpp)
+        ${PROJECT_EXCEPTION_SOURCES_DIR}/InvalidDataException.cpp
+)
 
 set(PROJECT_MODEL_DIR
-        ${PROJECT_SOURCES_DIR}/model)
+        ${PROJECT_SOURCE_DIR}/model)
 set(PROJECT_MODEL_HEADERS_DIR
         ${PROJECT_MODEL_DIR}/header)
 set(PROJECT_MODEL_SOURCES_DIR
@@ -46,16 +46,16 @@ set(MODEL_SOURCES_FILES
         ${PROJECT_MODEL_SOURCES_DIR}/ClientOrder.cpp
         ${PROJECT_MODEL_HEADERS_DIR}/ClientOrderContainer.h
         ${PROJECT_MODEL_SOURCES_DIR}/ClientOrderContainer.cpp
+        ${PROJECT_MODEL_HEADERS_DIR}/SaboresIsep.h
+        ${PROJECT_MODEL_SOURCES_DIR}/SaboresISep.cpp
         ${PROJECT_MODEL_HEADERS_DIR}/DonoContainer.h
         ${PROJECT_MODEL_SOURCES_DIR}/DonoContainer.cpp
+        ${PROJECT_MODEL_HEADERS_DIR}/Order.h
+        ${PROJECT_MODEL_SOURCES_DIR}/Order.cpp
         ${PROJECT_MODEL_HEADERS_DIR}/Menu.h
         ${PROJECT_MODEL_SOURCES_DIR}/Menu.cpp
         ${PROJECT_MODEL_HEADERS_DIR}/MenuContainer.h
         ${PROJECT_MODEL_SOURCES_DIR}/MenuContainer.cpp
-        ${PROJECT_MODEL_HEADERS_DIR}/Order.h
-        ${PROJECT_MODEL_SOURCES_DIR}/Order.cpp
-        ${PROJECT_MODEL_HEADERS_DIR}/SaboresIsep.h
-        ${PROJECT_MODEL_SOURCES_DIR}/SaboresIsep.cpp
         ${PROJECT_MODEL_HEADERS_DIR}/Supplier.h
         ${PROJECT_MODEL_SOURCES_DIR}/Supplier.cpp
         ${PROJECT_MODEL_HEADERS_DIR}/SupplierContainer.h
@@ -65,14 +65,15 @@ set(MODEL_SOURCES_FILES
         ${PROJECT_MODEL_HEADERS_DIR}/SupplierOrderContainer.h
         ${PROJECT_MODEL_SOURCES_DIR}/SupplierOrderContainer.cpp
         ${PROJECT_MODEL_HEADERS_DIR}/User.h
-        ${PROJECT_MODEL_SOURCES_DIR}/User.cpp)
+        ${PROJECT_MODEL_SOURCES_DIR}/User.cpp
+)
 
 set(PROJECT_VIEWS_DIR
-        ${PROJECT_SOURCE_DIR}/VIEWS)
+        ${PROJECT_SOURCE_DIR}/views)
 set(PROJECT_VIEWS_HEADERS_DIR
-        ${PROJECT_VIEWS_DIR}/header)
+        ${PROJECT_SOURCE_DIR}/header/views)
 set(PROJECT_VIEWS_SOURCES_DIR
-        ${PROJECT_VIEWS_DIR}/sources)
+        ${PROJECT_SOURCE_DIR}/sources/views)
 include_directories(
         ${PROJECT_VIEWS_HEADERS_DIR}
         ${PROJECT_VIEWS_SOURCES_DIR})
@@ -91,24 +92,7 @@ set(VIEWS_SOURCE_FILES
         ${PROJECT_VIEWS_SOURCES_DIR}/Utils.cpp
         ${PROJECT_VIEWS_HEADERS_DIR}/View.h
         ${PROJECT_VIEWS_SOURCES_DIR}/View.cpp
-)
-
-set(SOURCE_FILES
-        main.cpp
-        controller/controller.h
-        controller/Controller.cpp
-        mock/MockData.h
-        mock/MockData.cpp
-        header/model/ClientOrder.h
-        header/model/Client.h
-header/model/SaboresIsep.h)
-
-add_executable(SaboresIsep ${PROJECT_SOURCE_DIR}/ main.cpp
-        mock/MockData.cpp
-        sources/controller/Controller.cpp
-        sources/exceptions/DataConsistencyException.cpp
-        sources/exceptions/DuplicatedDataException.cpp
-        sources/exceptions/InvalidDataException.cpp
+        header/exceptions/DataConsistencyException.h
         sources/model/Client.cpp
         sources/model/ClientContainer.cpp
         sources/model/ClientOrderContainer.cpp
@@ -122,23 +106,20 @@ add_executable(SaboresIsep ${PROJECT_SOURCE_DIR}/ main.cpp
         sources/model/SupplierOrder.cpp
         sources/model/SupplierOrderContainer.cpp
         sources/model/User.cpp
-        sources/views/ClientOrderView.cpp
-        sources/views/ClientView.cpp
-        sources/views/MenuView.cpp
-        sources/views/SupplierOrderView.cpp
-        sources/views/Utils.cpp
-        sources/views/View.cpp)
+)
 
 
-set(CMAKE_INCLUDE_DIRS
-        ${PROJECT_SOURCES_DIR}/include
-        ${PROJECT_SOURCES_DIR}/external/include)
-include_directories(
-        ${PROJECT_SOURCES_DIR}/include
-        ${PROJECT_SOURCES_DIR}/external)
-include_directories(
-        ${PROJECT_SOURCES_DIR}/../../header)
-include_directories(${PROJECT_SOURCES_DIR}/custom/header)
-include_directories(${PROJECT_SOURCES_DIR}/header)
-set(Sources my_lib.cpp)
-set(Headers header_of_my_lib.h)
+set(SOURCE_FILES
+
+        main.cpp
+        header/controller/controller.h
+        sources/controller/Controller.cpp
+        mock/MockData.h
+        mock/MockData.cpp)
+add_executable(
+        ${SOURCE_FILES}
+        ${MODEL_SOURCE_FILES}
+        ${VIEWS_SOURCE_FILES}
+        ${EXCEPTION_SOURCE_FILES}
+        main.cpp
+)

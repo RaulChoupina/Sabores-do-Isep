@@ -1,13 +1,14 @@
 #include <iostream>
-#include "SaboresIsep.h"
+#include "header/model/SaboresIsep.h"
+
 #include "mock/MockData.h"
-#include "controller.h"
+#include "header/controller/controller.h"
 
 using namespace std;
 
 int main() {
     SaboresIsep saboresIsep("Restaurante");
-    saboresIsep.setDono("dono");
+    saboresIsep.setDono("dono","password");
 
     MockData mock;
     mock.generateData(saboresIsep);

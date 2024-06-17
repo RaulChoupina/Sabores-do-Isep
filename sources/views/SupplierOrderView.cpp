@@ -3,47 +3,50 @@
 //
 
 #include <iostream>
+#include <iomanip> // Include iomanip for setw
 #include "SupplierOrderView.h"
 #include "Utils.h"
 
 using namespace std;
 
-string SupplierOrderView:: getSupplierName(){
+std::string SupplierOrderView::getSupplierName() {
     return Utils::getString("Insert Supplier Name");
 }
-string SupplierOrderView:: getMenuName(){
+
+std::string SupplierOrderView::getMenuName() {
     return Utils::getString("Insert Menu Name");
 }
-string SupplierOrderView:: getAmountInStock(){
+
+std::string SupplierOrderView::getAmountInStock() {
     return "0";
 }
-string SupplierOrderView:: OrderPlaced(){
-   cout << "Order Placed" << endl;
-}
-void SupplierOrderView::printAllSupplierOrders(SupplierOrderContainer& supplierOrders){
-     cout << "Suppliers Orders" << endl;
-     cout << setw(NAMESPACING) << "Name";
-     cout << setw(PRICESPACING) << "SellingPrice" << endl;
 
-     list < SupplierOrder > tempSupplierOrders = SupplierOrders.getAll();
-     auto it = tempSupplierOrders.begin();
-     for (int i = 1; it != tempSupplierOrders.end(); ++it, ++i){
-         cout << setw(NAMESPACING) << it-> getSupplier()-> getName();
-         cout << setw(PRICESPACING) << it-> getSellingPrice() << endl;
-     }
+void SupplierOrderView::OrderPlaced() {
+    cout << "Order Placed" << endl;
 }
-void SupplierOrderView:: ThereAreNoOrders(){
-     cout << "There are no orders" << endl;
-}
-void SupplierOrderView:: printSupplierOrdersBySupplier(SupplierOrderConstainer& supplierOrders, Supplier& supplier){
-    cout << "Orders placed by " << supplier.getName() << endl;
+
+void SupplierOrderView::printAllSupplierOrders(SupplierOrderContainer& supplierOrders) {
+    cout << "Suppliers Orders" << endl;
+    cout << setw(NAMESPACING) << "Name";
     cout << setw(PRICESPACING) << "SellingPrice" << endl;
 
-    Supplier* supplierPtr = &supplier;
-    list <SupplierOrder> tempSupplierOrders = supplierOrders.getSupplierOrdersBySupplier(supplierPtr, supplierOrders).getAll();
-    auto it = tempSupplierOrders.begin();
-    for (int i = 1; it != tempSupplierOrders.end(); ++it, ++i){
+    list<SupplierOrder> tempSupplierOrders = supplierOrders.getAll();
+    for (auto it = tempSupplierOrders.begin(); it != tempSupplierOrders.end(); ++it) {
+        cout << setw(NAMESPACING) << it->getSupplier()->getName();
         cout << setw(PRICESPACING) << it->getSellingPrice() << endl;
     }
 }
 
+void SupplierOrderView::ThereAreNoOrders() {
+    cout << "There are no orders" << endl;
+}
+
+void SupplierOrderView::printSupplierOrdersBySupplier(SupplierOrderContainer& supplierOrders, Supplier& supplier) {
+    cout << "Orders placed by " << supplier.getName() << endl;
+    cout << setw(PRICESPACING) << "SellingPrice" << endl;
+
+    list<SupplierOrder> tempSupplierOrders = supplierOrders.getSupplierOrdersBySupplier(&supplier, modelSupplierOrderContainer).getAll();
+    for (auto it = tempSupplierOrders.begin(); it != tempSupplierOrders.end(); ++it) {
+        cout << setw(PRICESPACING) << it->getSellingPrice() << endl;
+    }
+}

@@ -17,25 +17,20 @@
 					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="SaboresIsep">
-				<Option output="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/SaboresIsep.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="main.cpp">
+				<Option output="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/main.cpp.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/controller"/>
-					<Add directory="/exceptions/header"/>
-					<Add directory="/exceptions/sources"/>
-					<Add directory="/model/header"/>
-					<Add directory="/model/sources"/>
-					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/VIEWS/header"/>
-					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/VIEWS/sources"/>
-					<Add directory="/include"/>
-					<Add directory="/external"/>
-					<Add directory="/../../header"/>
-					<Add directory="/custom/header"/>
-					<Add directory="/header"/>
+					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/controller"/>
+					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/exceptions"/>
+					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/exceptions"/>
+					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/model/header"/>
+					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/model/sources"/>
+					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/views"/>
+					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/views"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
@@ -45,31 +40,26 @@
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/Makefile&quot;  VERBOSE=1 SaboresIsep"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/Makefile&quot;  VERBOSE=1 main.cpp"/>
 					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="SaboresIsep/fast">
-				<Option output="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/SaboresIsep.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="main.cpp/fast">
+				<Option output="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/main.cpp.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/controller"/>
-					<Add directory="/exceptions/header"/>
-					<Add directory="/exceptions/sources"/>
-					<Add directory="/model/header"/>
-					<Add directory="/model/sources"/>
-					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/VIEWS/header"/>
-					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/VIEWS/sources"/>
-					<Add directory="/include"/>
-					<Add directory="/external"/>
-					<Add directory="/../../header"/>
-					<Add directory="/custom/header"/>
-					<Add directory="/header"/>
+					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/controller"/>
+					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/exceptions"/>
+					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/exceptions"/>
+					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/model/header"/>
+					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/model/sources"/>
+					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/views"/>
+					<Add directory="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/views"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
@@ -79,7 +69,7 @@
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/Makefile&quot;  VERBOSE=1 SaboresIsep/fast"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/Makefile&quot;  VERBOSE=1 main.cpp/fast"/>
 					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -106,86 +96,116 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/CMGM/Documents/GitHub">
-			<Option target="SaboresIsep"/>
+		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/controller/controller.h">
+			<Option target="main.cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/exceptions/DataConsistencyException.h">
+			<Option target="main.cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/exceptions/DuplicatedDataException.h">
+			<Option target="main.cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/exceptions/InvalidDataException.h">
+			<Option target="main.cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/views/ClientOrderView.h">
+			<Option target="main.cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/views/ClientView.h">
+			<Option target="main.cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/views/MenuView.h">
+			<Option target="main.cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/views/SupplierOrderView.h">
+			<Option target="main.cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/views/SupplierView.h">
+			<Option target="main.cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/views/Utils.h">
+			<Option target="main.cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/views/View.h">
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/main.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/mock/MockData.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/mock/MockData.h">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/controller/Controller.cpp">
-			<Option target="SaboresIsep"/>
-		</Unit>
-		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/exceptions/DataConsistencyException.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/exceptions/DuplicatedDataException.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/exceptions/InvalidDataException.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/model/Client.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/model/ClientContainer.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/model/ClientOrderContainer.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/model/DonoContainer.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/model/Menu.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/model/MenuContainer.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/model/Order.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/model/SaboresIsep.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/model/Supplier.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/model/SupplierContainer.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/model/SupplierOrder.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/model/SupplierOrderContainer.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/model/User.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/views/ClientOrderView.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/views/ClientView.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/views/MenuView.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/views/SupplierOrderView.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/views/SupplierView.cpp">
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/views/Utils.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/views/View.cpp">
-			<Option target="SaboresIsep"/>
+			<Option target="main.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

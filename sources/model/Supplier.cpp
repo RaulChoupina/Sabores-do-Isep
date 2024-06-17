@@ -2,7 +2,7 @@
 // Created by HP on 27/05/2024.
 //
 #include <iostream>
-#include "Supplier.h"
+#include "../model/Supplier.h"
 
 Supplier:: Supplier (string& Name,bool isActive){
     setName(Name);

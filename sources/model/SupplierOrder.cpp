@@ -2,7 +2,7 @@
 // Created by HP on 27/05/2024.
 //
 #include <iostream>
-#include "SupplierOrder.h"
+#include "../model/SupplierOrder.h"
 #include "Utils.h"
 
 SupplierOrder:: SupplierOrder (Supplier *pSupplier,float SupplierPrice){

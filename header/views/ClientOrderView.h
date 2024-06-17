@@ -6,8 +6,8 @@
 #define SABORES_DO_ISEP_CLIENTORDERVIEW_H
 
 #include <iostream>
-#include "ClientOrder.h"
-#include "ClientOrderContainer.h"
+#include "../model/ClientOrder.h"
+#include "../model/ClientOrderContainer.h"
 #include "View.h"
 
       class ClientOrderView{

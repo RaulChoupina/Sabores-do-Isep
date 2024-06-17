@@ -2,9 +2,9 @@
 // Created by HP on 27/05/2024.
 //
 #include <iostream>
-#include "Client.h"
+#include "../model/Client.h"
 #include <utility>
-#include "User.h"
+#include "../model/User.h"
 
 using namespace std;
 

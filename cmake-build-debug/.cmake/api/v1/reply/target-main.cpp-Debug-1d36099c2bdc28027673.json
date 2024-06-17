@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "SaboresIsep.exe"
+			"path" : "main.cpp.exe"
 		},
 		{
-			"path" : "SaboresIsep.pdb"
+			"path" : "main.cpp.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -28,7 +28,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 106,
+				"line" : 119,
 				"parent" : 0
 			},
 			{
@@ -40,7 +40,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 20,
+				"line" : 21,
 				"parent" : 0
 			},
 			{
@@ -52,31 +52,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 76,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 136,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 139,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 141,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 142,
+				"line" : 77,
 				"parent" : 0
 			}
 		]
@@ -94,51 +70,31 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/controller"
+					"path" : "C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/controller"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/exceptions/header"
+					"path" : "C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/exceptions"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/exceptions/sources"
+					"path" : "C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/exceptions"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/model/header"
+					"path" : "C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/model/header"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/model/sources"
+					"path" : "C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/model/sources"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/VIEWS/header"
+					"path" : "C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/header/views"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/VIEWS/sources"
-				},
-				{
-					"backtrace" : 6,
-					"path" : "/include"
-				},
-				{
-					"backtrace" : 6,
-					"path" : "/external"
-				},
-				{
-					"backtrace" : 7,
-					"path" : "/../../header"
-				},
-				{
-					"backtrace" : 8,
-					"path" : "/custom/header"
-				},
-				{
-					"backtrace" : 9,
-					"path" : "/header"
+					"path" : "C:/Users/CMGM/Documents/GitHub/Sabores-do-Isep/sources/views"
 				}
 			],
 			"language" : "CXX",
@@ -153,34 +109,34 @@
 			"sourceIndexes" : 
 			[
 				1,
-				2,
 				3,
-				4,
 				5,
-				6,
 				7,
-				8,
 				9,
-				10,
 				11,
-				12,
 				13,
-				14,
 				15,
-				16,
 				17,
-				18,
 				19,
 				20,
 				21,
 				22,
 				23,
 				24,
-				25
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				33,
+				35,
+				36
 			]
 		}
 	],
-	"id" : "SaboresIsep::@6890427a1f51a3e7e1df",
+	"id" : "main.cpp::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -200,8 +156,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "SaboresIsep",
-	"nameOnDisk" : "SaboresIsep.exe",
+	"name" : "main.cpp",
+	"nameOnDisk" : "main.cpp.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -210,10 +166,21 @@
 	"sourceGroups" : 
 	[
 		{
-			"name" : "",
+			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				2,
+				4,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				32,
+				34
 			]
 		},
 		{
@@ -221,30 +188,30 @@
 			"sourceIndexes" : 
 			[
 				1,
-				2,
 				3,
-				4,
 				5,
-				6,
 				7,
-				8,
 				9,
-				10,
 				11,
-				12,
 				13,
-				14,
 				15,
-				16,
 				17,
-				18,
 				19,
 				20,
 				21,
 				22,
 				23,
 				24,
-				25
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				33,
+				35,
+				36
 			]
 		}
 	],
@@ -252,20 +219,8 @@
 	[
 		{
 			"backtrace" : 1,
-			"path" : "C:/Users/CMGM/Documents/GitHub",
+			"path" : "header/controller/controller.h",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "mock/MockData.cpp",
-			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
@@ -275,21 +230,96 @@
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "sources/exceptions/DataConsistencyException.cpp",
-			"sourceGroupIndex" : 1
+			"path" : "mock/MockData.h",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "sources/exceptions/DuplicatedDataException.cpp",
+			"path" : "mock/MockData.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
+			"path" : "header/views/ClientOrderView.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "sources/exceptions/InvalidDataException.cpp",
+			"path" : "sources/views/ClientOrderView.cpp",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "header/views/ClientView.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "sources/views/ClientView.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "header/views/MenuView.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "sources/views/MenuView.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "header/views/SupplierOrderView.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "sources/views/SupplierOrderView.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "header/views/SupplierView.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "sources/views/SupplierView.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "header/views/Utils.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "sources/views/Utils.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "header/views/View.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "sources/views/View.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "header/exceptions/DataConsistencyException.h",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
@@ -371,38 +401,30 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "header/exceptions/DuplicatedDataException.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "sources/views/ClientOrderView.cpp",
+			"path" : "sources/exceptions/DuplicatedDataException.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "header/exceptions/InvalidDataException.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "sources/exceptions/InvalidDataException.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "sources/views/ClientView.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "sources/views/MenuView.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "sources/views/SupplierOrderView.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "sources/views/Utils.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "sources/views/View.cpp",
+			"path" : "main.cpp",
 			"sourceGroupIndex" : 1
 		}
 	],

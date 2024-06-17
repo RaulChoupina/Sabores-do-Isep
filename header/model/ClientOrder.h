@@ -1,24 +1,21 @@
-//
-// Created by HP on 27/05/2024.
-//
-
 #ifndef CLIENTORDER_H
 #define CLIENTORDER_H
 
 #include <iostream>
-#include "Order.h"
-#include "Client.h"
 #include <string>
+#include "Order.h" // Assuming Order class is defined elsewhere
+#include "Client.h"
 
-class ClientOrder : public order {
+class ClientOrder : public Order {
 private:
-int nOrder;
-string OrderDetails;
-Client* client{};
+    int nOrder; // Not used in your provided snippets
+    std::string orderDetails; // Changed to camelCase for consistency
+    Client* client; // Pointer to Client object
+
 public:
-    ClientOrder()= default;
-    ClientOrder(int nOrder, string OrderDetails , Client* client);
+    ClientOrder(Client* client, float sellingPrice); // Constructor declaration
     void setClient(Client* pClient);
     Client* getClient();
 };
-#endif //CLIENTORDER_H
+
+#endif // CLIENTORDER_H

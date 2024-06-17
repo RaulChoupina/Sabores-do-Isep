@@ -2,7 +2,7 @@
 // Created by HP on 27/05/2024.
 //
 #include <iostream>
-#include "Order.h"
+#include "../model/Order.h"
 
 Order::Order(){
     setSellingPrice (0);
